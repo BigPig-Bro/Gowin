@@ -1,0 +1,52 @@
+[
+ {
+  "InstFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/top.sv",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/top.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/top.sv",
+    "InstLine" : 25,
+    "InstName" : "m0",
+    "ModuleFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/gowin_rpll/video_pll.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "video_pll"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/top.sv",
+    "InstLine" : 34,
+    "InstName" : "m1",
+    "ModuleFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/rgb_timing.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "rgb_timing"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/top.sv",
+    "InstLine" : 59,
+    "InstName" : "m2",
+    "ModuleFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/display.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "display"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/top.sv",
+    "InstLine" : 92,
+    "InstName" : "uart_rx_inst",
+    "ModuleFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/uart_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_rx"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/top.sv",
+    "InstLine" : 103,
+    "InstName" : "m4",
+    "ModuleFile" : "E:/FPGA_work/GOWIN/POCKET_LAB/VGA_FlappyBird/src/game_ctrl.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "game_ctrl"
+   }
+  ]
+ }
+]

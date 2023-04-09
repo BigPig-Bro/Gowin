@@ -1,0 +1,11 @@
+-d E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\impl\gwsynthesis\VGA_FlappyBird.vg
+-p GW1N-9C-LQFP144-6
+-pn GW1N-LV9LQ144C6/I5
+-cst E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\src\top.cst
+-cfg E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-route_maxfan 23

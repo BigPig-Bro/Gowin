@@ -1,0 +1,16 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1N-9C" pn="GW1N-LV9LQ144C6/I5">gw1n9c-017</Device>
+    <FileList>
+        <File path="src/display.sv" type="file.verilog" enable="1"/>
+        <File path="src/game_ctrl.sv" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/video_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/rgb_timing.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.sv" type="file.verilog" enable="1"/>
+        <File path="src/uart_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1N-9C" package="LQFP144" speed="6" partNumber="GW1N-LV9LQ144C6/I5"/>
+    <FileList>
+        <File path="E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\src\display.sv" type="verilog"/>
+        <File path="E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\src\game_ctrl.sv" type="verilog"/>
+        <File path="E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\src\gowin_rpll\video_pll.v" type="verilog"/>
+        <File path="E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\src\rgb_timing.sv" type="verilog"/>
+        <File path="E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\src\top.sv" type="verilog"/>
+        <File path="E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\src\uart_rx.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\FPGA_work\GOWIN\POCKET_LAB\VGA_FlappyBird\impl\gwsynthesis\VGA_FlappyBird.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
