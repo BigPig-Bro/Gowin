@@ -1,0 +1,36 @@
+[
+ {
+  "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+    "InstLine" : 64,
+    "InstName" : "DVI_TX_Top_inst",
+    "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "DVI_TX_Top"
+   },
+   {
+    "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+    "InstLine" : 31,
+    "InstName" : "vga_timing_m0",
+    "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/vga_timing.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "vga_timing"
+   },
+   {
+    "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+    "InstLine" : 47,
+    "InstName" : "u_tmds_rpll",
+    "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/gowin_rpll/TMDS_rPLL.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "TMDS_rPLL"
+   }
+  ]
+ }
+]
