@@ -1,0 +1,91 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\syn_gen.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\testpattern.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\top.v'
+Undeclared symbol 'sd_card_clk', assumed default net type 'wire'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\top.v":110)
+WARN  (EX3638) : 'sd_card_clk' is already implicitly declared on line 110("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\top.v":117)
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_cmd.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_sec_read_write.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_top.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\spi_master.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\gowin_rpll\sys_pll.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\gowin_rpll\mem_pll.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\bmp_read.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v'
+Compiling module 'top'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\top.v":1)
+Compiling module 'sys_pll'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\gowin_rpll\sys_pll.v":9)
+Compiling module 'mem_pll'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\gowin_rpll\mem_pll.v":9)
+Compiling module 'sd_card_bmp'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":1)
+Compiling module 'bmp_read'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\bmp_read.v":1)
+Compiling module 'sd_card_top'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_top.v":1)
+Compiling module 'sd_card_sec_read_write'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_sec_read_write.v":1)
+Compiling module 'sd_card_cmd'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_cmd.v":1)
+Compiling module 'spi_master'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\spi_master.v":1)
+WARN  (EX1947) : Input port 'sd_sec_write_data[7]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX1947) : Input port 'sd_sec_write_data[6]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX1947) : Input port 'sd_sec_write_data[5]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX1947) : Input port 'sd_sec_write_data[4]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX1947) : Input port 'sd_sec_write_data[3]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX1947) : Input port 'sd_sec_write_data[2]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX1947) : Input port 'sd_sec_write_data[1]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX1947) : Input port 'sd_sec_write_data[0]' remains unconnected for this instance("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\sd_card\sd_card_bmp.v":68)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 17 for port 'write_data'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\top.v":132)
+Compiling module 'syn_gen'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\syn_gen.v":13)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("D:\Users\HUIP\Desktop\SD_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "D:\Users\HUIP\Desktop\SD_LCD480_DDR3\impl\gwsynthesis\SD_LCD480_DDR3.vg" completed
+[100%] Generate report file "D:\Users\HUIP\Desktop\SD_LCD480_DDR3\impl\gwsynthesis\SD_LCD480_DDR3_syn.rpt.html" completed
+GowinSynthesis finish

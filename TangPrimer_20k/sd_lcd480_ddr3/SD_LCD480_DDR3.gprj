@@ -1,0 +1,24 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+    <FileList>
+        <File path="src/ddr3_memory_interface/DDR3MI.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/mem_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/sys_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/bmp_read.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/sd_card_bmp.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/sd_card_cmd.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/sd_card_sec_read_write.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/sd_card_top.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/spi_master.v" type="file.verilog" enable="1"/>
+        <File path="src/syn_gen.v" type="file.verilog" enable="1"/>
+        <File path="src/testpattern.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/video_frame_buffer/Video_Frame_Buffer_Top.v" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+        <File path="src/top.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

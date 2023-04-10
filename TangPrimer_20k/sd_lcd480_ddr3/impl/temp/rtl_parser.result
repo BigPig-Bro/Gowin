@@ -1,0 +1,112 @@
+[
+ {
+  "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/testpattern.v",
+  "InstLine" : 17,
+  "InstName" : "testpattern",
+  "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/testpattern.v",
+  "ModuleLine" : 17,
+  "ModuleName" : "testpattern"
+ },
+ {
+  "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+    "InstLine" : 198,
+    "InstName" : "Video_Frame_Buffer_Top_inst",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Video_Frame_Buffer_Top"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+    "InstLine" : 284,
+    "InstName" : "DDR3_Memory_Interface_Top_inst",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/ddr3_memory_interface/DDR3MI.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "DDR3MI"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+    "InstLine" : 95,
+    "InstName" : "sys_pll_m0",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/gowin_rpll/sys_pll.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "sys_pll"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+    "InstLine" : 100,
+    "InstName" : "mem_pll_m0",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/gowin_rpll/mem_pll.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "mem_pll"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+    "InstLine" : 122,
+    "InstName" : "sd_card_bmp_m0",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_bmp.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "sd_card_bmp",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_bmp.v",
+      "InstLine" : 32,
+      "InstName" : "bmp_read_m0",
+      "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/bmp_read.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "bmp_read"
+     },
+     {
+      "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_bmp.v",
+      "InstLine" : 50,
+      "InstName" : "sd_card_top_m0",
+      "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_top.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "sd_card_top",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_top.v",
+        "InstLine" : 52,
+        "InstName" : "sd_card_sec_read_write_m0",
+        "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_sec_read_write.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "sd_card_sec_read_write"
+       },
+       {
+        "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_top.v",
+        "InstLine" : 83,
+        "InstName" : "sd_card_cmd_m0",
+        "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_cmd.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "sd_card_cmd"
+       },
+       {
+        "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/sd_card_top.v",
+        "InstLine" : 110,
+        "InstName" : "spi_master_m0",
+        "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/sd_card/spi_master.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "spi_master"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/top.v",
+    "InstLine" : 142,
+    "InstName" : "syn_gen_inst",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/SD_LCD480_DDR3/src/syn_gen.v",
+    "ModuleLine" : 13,
+    "ModuleName" : "syn_gen"
+   }
+  ]
+ }
+]
