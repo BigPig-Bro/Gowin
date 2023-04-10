@@ -1,0 +1,45 @@
+IO_LOC "clk" H11;
+IO_LOC "rst_n  " D7;
+IO_LOC "iic_scl[0]" D11;
+IO_LOC "iic_sda[0]" B11;
+IO_LOC "iic_vcc[0]" N7;
+IO_LOC "iic_gnd[0]" N8;
+
+IO_LOC "iic_scl[1]" R8;
+IO_LOC "iic_sda[1]" P6;
+IO_LOC "iic_vcc[1]" P8;
+IO_LOC "iic_gnd[1]" T9;
+
+IO_LOC "iic_scl[2]" R11;
+IO_LOC "iic_sda[2]" P11;
+IO_LOC "iic_vcc[2]" M15;
+IO_LOC "iic_gnd[2]" J16;
+
+IO_LOC "iic_scl[3]" B14;
+IO_LOC "iic_sda[3]" D14;
+IO_LOC "iic_vcc[3]" B13;
+IO_LOC "iic_gnd[3]" B12;
+
+
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+IO_PORT "rst_n  " IO_TYPE=LVCMOS33;
+IO_PORT "iic_scl[0]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_sda[0]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_vcc[0]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_gnd[0]" IO_TYPE=LVCMOS33;
+
+IO_PORT "iic_scl[1]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_sda[1]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_vcc[1]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_gnd[1]" IO_TYPE=LVCMOS33;
+
+IO_PORT "iic_scl[2]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_sda[2]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_vcc[2]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_gnd[2]" IO_TYPE=LVCMOS33;
+
+IO_PORT "iic_scl[3]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_sda[3]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_vcc[3]" IO_TYPE=LVCMOS33;
+IO_PORT "iic_gnd[3]" IO_TYPE=LVCMOS33;
+

@@ -1,0 +1,28 @@
+{
+ "Files" : [
+  {
+   "Path" : "D:/Users/HUIP/Desktop/IIC_OLED_4/src/iic_master.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Users/HUIP/Desktop/IIC_OLED_4/src/oled_ctrl.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Users/HUIP/Desktop/IIC_OLED_4/src/oled_ram.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Users/HUIP/Desktop/IIC_OLED_4/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/Users/HUIP/Desktop/IIC_OLED_4/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
+    <FileList>
+        <File path="D:\Users\HUIP\Desktop\IIC_OLED_4\src\iic_master.sv" type="verilog"/>
+        <File path="D:\Users\HUIP\Desktop\IIC_OLED_4\src\oled_ctrl.sv" type="verilog"/>
+        <File path="D:\Users\HUIP\Desktop\IIC_OLED_4\src\oled_ram.sv" type="verilog"/>
+        <File path="D:\Users\HUIP\Desktop\IIC_OLED_4\src\top.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\Users\HUIP\Desktop\IIC_OLED_4\impl\gwsynthesis\IIC_OLED_4.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
