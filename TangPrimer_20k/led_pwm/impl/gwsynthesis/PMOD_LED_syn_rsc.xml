@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="309" Alu="51" Lut="11">
+    <SubModule name="m0" Register="1" Lut="326" Dsp="1"/>
+    <SubModule name="m1" Register="1" Lut="327" Dsp="1"/>
+    <SubModule name="m2" Register="1" Lut="334" Dsp="1"/>
+    <SubModule name="m3" Register="1" Lut="339" Dsp="1"/>
+    <SubModule name="m4" Register="1" Lut="379" Dsp="1"/>
+    <SubModule name="m5" Register="1" Lut="361" Dsp="1"/>
+    <SubModule name="m6" Register="1" Lut="338" Dsp="1"/>
+    <SubModule name="m7" Register="1" Lut="327" Dsp="1"/>
+</Module>

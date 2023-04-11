@@ -1,0 +1,76 @@
+[
+ {
+  "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 34,
+    "InstName" : "m0",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 43,
+    "InstName" : "m1",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 53,
+    "InstName" : "m2",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 63,
+    "InstName" : "m3",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 72,
+    "InstName" : "m4",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 81,
+    "InstName" : "m5",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 91,
+    "InstName" : "m6",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   },
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/top.v",
+    "InstLine" : 101,
+    "InstName" : "m7",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/PMOD_LED_PWM/src/pwm_ctr.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "pwm_ctr"
+   }
+  ]
+ }
+]
