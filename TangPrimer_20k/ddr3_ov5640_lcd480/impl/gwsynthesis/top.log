@@ -1,0 +1,117 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\cmos_8_16bit.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\fifo_hs\video_fifo.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\gowin_rpll\cmos_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\gowin_rpll\mem_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\gowin_rpll\sys_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv'
+WARN  (EX3801) : Parameter 'DELAY' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":14)
+WARN  (EX3801) : Parameter 'STATE_DELAY' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":16)
+WARN  (EX3801) : Parameter 'STATE_INIT' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":17)
+WARN  (EX3801) : Parameter 'STATE_FINISH' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":18)
+WARN  (EX3801) : Parameter 'STATE_WAIT_BUSY' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":19)
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv'
+WARN  (EX2478) : Non-net output port 'recv_data' cannot be initialized at declaration in SystemVerilog mode("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX2478) : Non-net output port 'iic_scl' cannot be initialized at declaration in SystemVerilog mode("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":24)
+WARN  (EX3801) : Parameter 'CLK_DIV' becomes localparam in 'iic_master' with formal parameter declaration list("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":35)
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\syn_gen.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\testpattern.v'
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v'
+Undeclared symbol 'cmos_clk', assumed default net type 'wire'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":109)
+Undeclared symbol 'cmos_16bit_wr', assumed default net type 'wire'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":173)
+Analyzing Verilog file 'E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v'
+Compiling module 'top'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":1)
+Compiling module 'sys_pll'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\gowin_rpll\sys_pll.v":9)
+Compiling module 'cmos_pll'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\gowin_rpll\cmos_pll.v":9)
+Compiling module 'mem_pll'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\gowin_rpll\mem_pll.v":9)
+WARN  (EX3791) : Expression size 25 truncated to fit in target size 24("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":130)
+Compiling module 'iic_ctrl(CLK_FRE=27,INIT_CMD_NUM=256)'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":1)
+Extracting RAM for identifier 'init_cmd'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":32)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":46)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":62)
+Compiling module 'iic_master(CLK_FRE=27)'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":1)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":38)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":83)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":85)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":103)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":105)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":124)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":126)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":145)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":147)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":167)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":169)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":191)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":213)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 8 for port 'slave_addr'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_ctrl.sv":92)
+Compiling module 'cmos_8_16bit'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\cmos_8_16bit.v":1)
+Compiling module 'syn_gen'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\syn_gen.v":13)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\ddr3_memory_interface\DDR3MI.v":0)
+NOTE  (EX0101) : Current top module is "top"
+WARN  (EX0211) : The output port "recv_data[7]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[6]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[5]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[4]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[3]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[2]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[1]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[0]" of module "iic_master(CLK_FRE=27)" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "state_led[3]" of module "top" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":14)
+WARN  (EX0211) : The output port "state_led[2]" of module "top" has no driver("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":14)
+[5%] Running netlist conversion ...
+WARN  (CV0003) : Output "state_led[2]" has undriven bits, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":14)
+WARN  (CV0003) : Output "state_led[3]" has undriven bits, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\src\top.v":14)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\impl\gwsynthesis\top.vg" completed
+[100%] Generate report file "E:\FPGA_work\GOWIN\OV5640_LCD480_DDR3\impl\gwsynthesis\top_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="1735" Alu="163" Lut="2187" Bsram="16" Ssram="117">
+    <SubModule name="sys_pll_m0"/>
+    <SubModule name="cmos_pll_m0"/>
+    <SubModule name="mem_pll_m0"/>
+    <SubModule name="iic_ctrl_m0" Register="50" Alu="31" Lut="47" Bsram="1">
+        <SubModule name="iic_master_m0" Register="54" Alu="9" Lut="65" Ssram="1"/>
+    </SubModule>
+    <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3"/>
+    <SubModule name="syn_gen_inst" Register="32" Lut="66"/>
+</Module>
