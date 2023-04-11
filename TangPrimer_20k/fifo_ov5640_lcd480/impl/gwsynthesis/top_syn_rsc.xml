@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="44" Alu="41" Lut="16">
+    <SubModule name="sys_pll_m0"/>
+    <SubModule name="cmos_pll_m0"/>
+    <SubModule name="iic_ctrl_m0" Register="50" Alu="31" Lut="46" Bsram="1">
+        <SubModule name="iic_master_m0" Register="52" Alu="9" Lut="64" Ssram="1"/>
+    </SubModule>
+    <SubModule name="cmos_8_16bit_m0" Register="26" Lut="2"/>
+    <SubModule name="video_timing_data_m0" Register="88" Alu="12" Lut="134" Bsram="4">
+        <SubModule name="color_bar_m0" Register="28" Lut="60"/>
+    </SubModule>
+</Module>

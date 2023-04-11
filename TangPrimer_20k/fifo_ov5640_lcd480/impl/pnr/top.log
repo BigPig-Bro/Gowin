@@ -1,0 +1,33 @@
+Reading netlist file: "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\gwsynthesis\top.vg"
+Parsing netlist file "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\gwsynthesis\top.vg" completed
+Processing netlist completed
+Reading constraint file: "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\src\top.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1118) : the clock "sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk"'s frequency does not match cmos_pll_m0/rpll_inst's param "FCLKIN = "9""
+WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_vsync" and "sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk"
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_vsync_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\pnr\top.power.html" completed
+Generate file "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\pnr\top.pin.html" completed
+Generate file "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\pnr\top.rpt.html" completed
+Generate file "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\pnr\top.rpt.txt" completed
+Generate file "E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\pnr\top.tr.html" completed
+Fri Oct 21 20:20:26 2022
+

@@ -1,0 +1,12 @@
+-d E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\gwsynthesis\top.vg
+-p GW2A-18C-PBGA256-8
+-pn GW2A-LV18PG256C8/I7
+-cst E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\src\top.cst
+-cfg E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\impl\pnr\device.cfg
+-sdc E:\FPGA_work\GOWIN\OV5640_LCD480_FIFO\src\lcd.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-route_maxfan 23
