@@ -1,9 +1,9 @@
 [
  {
-  "InstFile" : "D:/Users/HUIP/Desktop/WS2812/src/top.v",
+  "InstFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/ws2812/src/top.v",
   "InstLine" : 2,
   "InstName" : "top",
-  "ModuleFile" : "D:/Users/HUIP/Desktop/WS2812/src/top.v",
+  "ModuleFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/ws2812/src/top.v",
   "ModuleLine" : 2,
   "ModuleName" : "top"
  }

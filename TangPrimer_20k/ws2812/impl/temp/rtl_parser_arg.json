@@ -1,7 +1,7 @@
 {
  "Files" : [
   {
-   "Path" : "D:/Users/HUIP/Desktop/WS2812/src/top.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ws2812/src/top.v",
    "Type" : "verilog"
   }
  ],
@@ -9,7 +9,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/Users/HUIP/Desktop/WS2812/impl/temp/rtl_parser.result",
+ "ResultFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/ws2812/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
