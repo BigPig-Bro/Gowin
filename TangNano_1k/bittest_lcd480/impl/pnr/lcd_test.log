@@ -1,0 +1,31 @@
+Reading netlist file: "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\impl\gwsynthesis\lcd_test.vg"
+Parsing netlist file "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\impl\gwsynthesis\lcd_test.vg" completed
+WARN  (PA1003) : Invalid parameterized value 'GW1N-4'(DEVICE) specified for instance 'video_pll_m0/rpll_inst'
+WARN  (PA1019) : Invalid VCO frequency '(FCLKIN*(FBDIV_SEL+1)*ODIV_SEL)/(IDIV_SEL+1)' to 'rpll_inst'(PLL) set by 'video_pll' of module, suitable range is from 400MHz to 800MHz.
+Processing netlist completed
+Reading constraint file: "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\lcd.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\impl\pnr\lcd_test.power.html" completed
+Generate file "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\impl\pnr\lcd_test.pin.html" completed
+Generate file "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\impl\pnr\lcd_test.rpt.html" completed
+Generate file "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\impl\pnr\lcd_test.rpt.txt" completed
+Generate file "E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\impl\pnr\lcd_test.tr.html" completed
+Sun Apr 16 22:15:33 2023
+
