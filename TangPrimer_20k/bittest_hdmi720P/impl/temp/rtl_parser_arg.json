@@ -1,19 +1,19 @@
 {
  "Files" : [
   {
-   "Path" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/dvi_tx/DVI_TX_Top.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/dvi_tx/DVI_TX_Top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/gowin_rpll/TMDS_rPLL.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/gowin_rpll/TMDS_rPLL.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/vga_timing.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/vga_timing.v",
    "Type" : "verilog"
   }
  ],
@@ -21,7 +21,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/impl/temp/rtl_parser.result",
+ "ResultFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/impl/temp/rtl_parser.result",
  "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"

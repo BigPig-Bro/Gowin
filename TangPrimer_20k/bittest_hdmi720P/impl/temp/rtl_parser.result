@@ -1,33 +1,33 @@
 [
  {
-  "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+  "InstFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/top.v",
   "InstLine" : 1,
   "InstName" : "top",
-  "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
+  "ModuleFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/top.v",
   "ModuleLine" : 1,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
-    "InstLine" : 64,
+    "InstFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/top.v",
+    "InstLine" : 62,
     "InstName" : "DVI_TX_Top_inst",
-    "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/dvi_tx/DVI_TX_Top.v",
     "ModuleLine" : 1,
     "ModuleName" : "DVI_TX_Top"
    },
    {
-    "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
-    "InstLine" : 31,
+    "InstFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/top.v",
+    "InstLine" : 29,
     "InstName" : "vga_timing_m0",
-    "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/vga_timing.v",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/vga_timing.v",
     "ModuleLine" : 1,
     "ModuleName" : "vga_timing"
    },
    {
-    "InstFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/top.v",
-    "InstLine" : 47,
+    "InstFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/top.v",
+    "InstLine" : 45,
     "InstName" : "u_tmds_rpll",
-    "ModuleFile" : "E:/EP4CE6F17C8/module/GOWIN/HDMI720P_BitTest/src/gowin_rpll/TMDS_rPLL.v",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/bittest_hdmi720P/src/gowin_rpll/TMDS_rPLL.v",
     "ModuleLine" : 9,
     "ModuleName" : "TMDS_rPLL"
    }
