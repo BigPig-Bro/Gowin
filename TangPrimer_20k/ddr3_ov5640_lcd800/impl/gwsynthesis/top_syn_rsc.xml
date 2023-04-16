@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="1711" Alu="140" Lut="2178" Bsram="16" Ssram="117">
+    <SubModule name="sys_pll_m0"/>
+    <SubModule name="cmos_pll_m0"/>
+    <SubModule name="mem_pll_m0"/>
+    <SubModule name="i2c_config_m0" Register="13" Lut="25">
+        <SubModule name="i2c_master_top_m0" Register="17" Lut="599">
+            <SubModule name="byte_controller" Register="23" Lut="49">
+                <SubModule name="bit_controller" Register="71" Alu="15" Lut="99"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3"/>
+    <SubModule name="syn_gen_inst" Register="33" Lut="63"/>
+</Module>

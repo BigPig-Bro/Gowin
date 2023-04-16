@@ -1,0 +1,1617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\cmos_8_16bit.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\color_bar.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\fifo_hs\video_fifo.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\gowin_rpll\cmos_pll.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\gowin_rpll\sys_pll.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\i2c_master\i2c_config.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\i2c_master\i2c_master_bit_ctrl.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\i2c_master\i2c_master_byte_ctrl.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\i2c_master\i2c_master_defines.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\i2c_master\i2c_master_top.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\i2c_master\timescale.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\lut_ov5640_rgb565_800_480.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\top.v<br>
+E:\EP4CE6F17C8\module\GOWIN\OV5640_LCD800_FIFO\src\video_timing_data.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Version</td>
+<td>GowinSynthesis V1.9.8.07 Education</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2A-LV18PG256C8/I7</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW2A-18C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Mon Aug 22 17:41:37 2022
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2022 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>top</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.453s, Elapsed time = 0h 0m 0.352s, Peak memory usage = 104.211MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.055s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.078s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.171s, Elapsed time = 0h 0m 0.169s, Peak memory usage = 104.211MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.007s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.003s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 104.211MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.042s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.138s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.029s, Peak memory usage = 104.211MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s, Peak memory usage = 116.926MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.097s, Peak memory usage = 116.926MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.066s, Peak memory usage = 116.926MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 116.926MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>41</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>41</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>26</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>265</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>26</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFS</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
+<td>33</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>42</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>91</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>44</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFNP</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDLCE</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>948</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>84</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>204</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>660</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>39</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>39</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprPLL</td>
+<td>2</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>997(958 LUTs, 39 ALUs) / 20736</td>
+<td>5%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>265 / 16173</td>
+<td>2%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>1 / 16173</td>
+<td>1%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>264 / 16173</td>
+<td>2%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>16 / 46</td>
+<td>35%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>clk</td>
+<td>Base</td>
+<td>37.037</td>
+<td>27.0</td>
+<td>0.000</td>
+<td>18.519</td>
+<td> </td>
+<td> </td>
+<td>clk_ibuf/I </td>
+</tr>
+<tr>
+<td>cmos_pclk</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>cmos_pclk_ibuf/I </td>
+</tr>
+<tr>
+<td>cmos_vsync</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>cmos_vsync_ibuf/I </td>
+</tr>
+<tr>
+<td>wfull_val</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val_s0/F </td>
+</tr>
+<tr>
+<td>lcd_vs_d</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>video_timing_data_m0/vs_s0/Q </td>
+</tr>
+<tr>
+<td>cmos_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>41.667</td>
+<td>24.0</td>
+<td>0.000</td>
+<td>20.833</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>cmos_pll_m0/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>41.667</td>
+<td>24.0</td>
+<td>0.000</td>
+<td>20.833</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>cmos_pll_m0/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>83.333</td>
+<td>12.0</td>
+<td>0.000</td>
+<td>41.667</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>cmos_pll_m0/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>125.000</td>
+<td>8.0</td>
+<td>0.000</td>
+<td>62.500</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUTD3 </td>
+</tr>
+<tr>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>31.250</td>
+<td>32.0</td>
+<td>0.000</td>
+<td>15.625</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>sys_pll_m0/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>31.250</td>
+<td>32.0</td>
+<td>0.000</td>
+<td>15.625</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>sys_pll_m0/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>62.500</td>
+<td>16.0</td>
+<td>0.000</td>
+<td>31.250</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>sys_pll_m0/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>93.750</td>
+<td>10.7</td>
+<td>0.000</td>
+<td>46.875</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT</td>
+<td>cmos_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUTD3 </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>No.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk</td>
+<td>27.0(MHz)</td>
+<td>171.6(MHz)</td>
+<td>8</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>cmos_pclk</td>
+<td>100.0(MHz)</td>
+<td>347.2(MHz)</td>
+<td>4</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>cmos_vsync</td>
+<td>100.0(MHz)</td>
+<td>530.1(MHz)</td>
+<td>3</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>lcd_vs_d</td>
+<td>100.0(MHz)</td>
+<td>530.1(MHz)</td>
+<td>3</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>32.0(MHz)</td>
+<td>213.4(MHz)</td>
+<td>7</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-2.987</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>98.155</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>95.167</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rptr_10_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>wfull_val[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>93.750</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>95.130</td>
+<td>1.380</td>
+<td>tCL</td>
+<td>RR</td>
+<td>84</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>95.310</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rptr_10_s0/CLK</td>
+</tr>
+<tr>
+<td>95.541</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rptr_10_s0/Q</td>
+</tr>
+<tr>
+<td>95.779</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val_s4/I1</td>
+</tr>
+<tr>
+<td>96.334</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val_s4/F</td>
+</tr>
+<tr>
+<td>96.571</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val_s1/I1</td>
+</tr>
+<tr>
+<td>97.126</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val_s1/F</td>
+</tr>
+<tr>
+<td>97.363</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n760_s0/I1</td>
+</tr>
+<tr>
+<td>97.918</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n760_s0/F</td>
+</tr>
+<tr>
+<td>98.155</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>95.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>wfull_val</td>
+</tr>
+<tr>
+<td>95.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>3</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val_s0/F</td>
+</tr>
+<tr>
+<td>95.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4/G</td>
+</tr>
+<tr>
+<td>95.202</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4</td>
+</tr>
+<tr>
+<td>95.167</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-1.322</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 1.665, 58.523%; route: 0.948, 33.322%; tC2Q: 0.232, 8.155%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-0.526</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>33.265</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>32.739</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wptr_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rempty_val1_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>cmos_pclk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>30.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>cmos_pclk</td>
+</tr>
+<tr>
+<td>30.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>cmos_pclk_ibuf/I</td>
+</tr>
+<tr>
+<td>30.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>77</td>
+<td>cmos_pclk_ibuf/O</td>
+</tr>
+<tr>
+<td>30.862</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wptr_0_s0/CLK</td>
+</tr>
+<tr>
+<td>31.094</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wptr_0_s0/Q</td>
+</tr>
+<tr>
+<td>31.332</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n148_s0/I0</td>
+</tr>
+<tr>
+<td>31.881</td>
+<td>0.549</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n148_s0/COUT</td>
+</tr>
+<tr>
+<td>31.881</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n149_s0/CIN</td>
+</tr>
+<tr>
+<td>31.916</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n149_s0/COUT</td>
+</tr>
+<tr>
+<td>31.916</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n150_s0/CIN</td>
+</tr>
+<tr>
+<td>31.951</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n150_s0/COUT</td>
+</tr>
+<tr>
+<td>31.951</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n151_s0/CIN</td>
+</tr>
+<tr>
+<td>31.986</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n151_s0/COUT</td>
+</tr>
+<tr>
+<td>31.986</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n152_s0/CIN</td>
+</tr>
+<tr>
+<td>32.021</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n152_s0/COUT</td>
+</tr>
+<tr>
+<td>32.021</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n153_s0/CIN</td>
+</tr>
+<tr>
+<td>32.056</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n153_s0/COUT</td>
+</tr>
+<tr>
+<td>32.056</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n154_s0/CIN</td>
+</tr>
+<tr>
+<td>32.092</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n154_s0/COUT</td>
+</tr>
+<tr>
+<td>32.092</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n155_s0/CIN</td>
+</tr>
+<tr>
+<td>32.127</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n155_s0/COUT</td>
+</tr>
+<tr>
+<td>32.127</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n156_s0/CIN</td>
+</tr>
+<tr>
+<td>32.162</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n156_s0/COUT</td>
+</tr>
+<tr>
+<td>32.162</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n157_s0/CIN</td>
+</tr>
+<tr>
+<td>32.197</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n157_s0/COUT</td>
+</tr>
+<tr>
+<td>32.197</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n158_s0/CIN</td>
+</tr>
+<tr>
+<td>32.233</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n158_s0/COUT</td>
+</tr>
+<tr>
+<td>32.233</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n159_s0/CIN</td>
+</tr>
+<tr>
+<td>32.268</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n159_s0/COUT</td>
+</tr>
+<tr>
+<td>32.268</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n160_s0/CIN</td>
+</tr>
+<tr>
+<td>32.303</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n160_s0/COUT</td>
+</tr>
+<tr>
+<td>32.303</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n161_s0/CIN</td>
+</tr>
+<tr>
+<td>32.338</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/n161_s0/COUT</td>
+</tr>
+<tr>
+<td>32.575</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rempty_val_s2/I2</td>
+</tr>
+<tr>
+<td>33.028</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rempty_val_s2/F</td>
+</tr>
+<tr>
+<td>33.265</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rempty_val1_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>31.250</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>32.630</td>
+<td>1.380</td>
+<td>tCL</td>
+<td>RR</td>
+<td>84</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>32.810</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rempty_val1_s0/CLK</td>
+</tr>
+<tr>
+<td>32.775</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rempty_val1_s0</td>
+</tr>
+<tr>
+<td>32.740</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/rempty_val1_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.697</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 1.460, 60.751%; route: 0.711, 29.593%; tC2Q: 0.232, 9.656%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>1.125</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>156.615</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>157.740</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>video_timing_data_m0/n56_s8</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>video_timing_data_m0/video_state_0_s3</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>cmos_vsync[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk[F]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>155.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>cmos_vsync</td>
+</tr>
+<tr>
+<td>155.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>1</td>
+<td>cmos_vsync_ibuf/I</td>
+</tr>
+<tr>
+<td>155.688</td>
+<td>0.688</td>
+<td>tINS</td>
+<td>FF</td>
+<td>12</td>
+<td>cmos_vsync_ibuf/O</td>
+</tr>
+<tr>
+<td>155.924</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/n56_s8/I2</td>
+</tr>
+<tr>
+<td>156.378</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/n56_s8/F</td>
+</tr>
+<tr>
+<td>156.615</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_state_0_s3/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>156.250</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>157.630</td>
+<td>1.380</td>
+<td>tCL</td>
+<td>RR</td>
+<td>84</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>157.809</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>video_timing_data_m0/video_state_0_s3/CLK</td>
+</tr>
+<tr>
+<td>157.774</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>video_timing_data_m0/video_state_0_s3</td>
+</tr>
+<tr>
+<td>157.739</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>video_timing_data_m0/video_state_0_s3</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.872</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.688, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.453, 48.868%; route: 0.237, 25.566%; tC2Q: 0.237, 25.566%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.688, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>1.815</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>155.924</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>157.740</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>video_timing_data_m0/vs_in_r_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>video_timing_data_m0/vs_in_r_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>cmos_vsync[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk[F]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>155.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>cmos_vsync</td>
+</tr>
+<tr>
+<td>155.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>1</td>
+<td>cmos_vsync_ibuf/I</td>
+</tr>
+<tr>
+<td>155.688</td>
+<td>0.688</td>
+<td>tINS</td>
+<td>FF</td>
+<td>12</td>
+<td>cmos_vsync_ibuf/O</td>
+</tr>
+<tr>
+<td>155.924</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/vs_in_r_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>156.250</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>157.630</td>
+<td>1.380</td>
+<td>tCL</td>
+<td>RR</td>
+<td>84</td>
+<td>sys_pll_m0/rpll_inst/CLKOUT</td>
+</tr>
+<tr>
+<td>157.809</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>video_timing_data_m0/vs_in_r_s0/CLK</td>
+</tr>
+<tr>
+<td>157.774</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>video_timing_data_m0/vs_in_r_s0</td>
+</tr>
+<tr>
+<td>157.739</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>video_timing_data_m0/vs_in_r_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.872</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>1.250</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.688, 100.000%; route: 0.000, 0.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.000, 0.000%; tC2Q: 0.237, 100.000%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.688, 100.000%; route: 0.000, 0.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.851</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.942</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>10.793</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wbin_5_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>wfull_val[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>cmos_pclk[F]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>wfull_val</td>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>3</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val_s0/F</td>
+</tr>
+<tr>
+<td>5.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4/G</td>
+</tr>
+<tr>
+<td>5.469</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>FF</td>
+<td>4</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/wfull_val1_s4/Q</td>
+</tr>
+<tr>
+<td>5.706</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Full_d_s/I2</td>
+</tr>
+<tr>
+<td>6.159</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Full_d_s/F</td>
+</tr>
+<tr>
+<td>6.396</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wgraynext_5_s1/I0</td>
+</tr>
+<tr>
+<td>6.913</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wgraynext_5_s1/F</td>
+</tr>
+<tr>
+<td>7.150</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wbinnext_5_s3/I1</td>
+</tr>
+<tr>
+<td>7.705</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wbinnext_5_s3/F</td>
+</tr>
+<tr>
+<td>7.942</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wbin_5_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>10.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>cmos_pclk</td>
+</tr>
+<tr>
+<td>10.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>cmos_pclk_ibuf/I</td>
+</tr>
+<tr>
+<td>10.682</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>77</td>
+<td>cmos_pclk_ibuf/O</td>
+</tr>
+<tr>
+<td>10.863</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wbin_5_s0/CLK</td>
+</tr>
+<tr>
+<td>10.828</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wbin_5_s0</td>
+</tr>
+<tr>
+<td>10.793</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>video_timing_data_m0/video_fifo_m0/fifo_inst/Equal.wbin_5_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.626</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 1.525, 56.377%; route: 0.948, 35.046%; tC2Q: 0.232, 8.577%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.237, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>
