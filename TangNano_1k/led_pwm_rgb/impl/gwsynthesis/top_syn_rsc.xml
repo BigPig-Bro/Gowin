@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top">
+    <SubModule name="pwm_rgb_m0" Register="51" Alu="27" Lut="75"/>
+    <SubModule name="pwm_ctr_m0" Register="21" Alu="95" Lut="220"/>
+    <SubModule name="pwm_ctr_m1" Register="21" Alu="95" Lut="234"/>
+    <SubModule name="pwm_ctr_m2" Register="21" Alu="95" Lut="196"/>
+</Module>
