@@ -1,0 +1,36 @@
+[
+ {
+  "InstFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/top.v",
+    "InstLine" : 17,
+    "InstName" : "video_pll_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/gowin_rpll/video_pll.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "video_pll"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/top.v",
+    "InstLine" : 22,
+    "InstName" : "rgb_timing_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/rgb_timing.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "rgb_timing"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/top.v",
+    "InstLine" : 33,
+    "InstName" : "display_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_1k/colorflow_lcd480/src/display.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "display"
+   }
+  ]
+ }
+]
