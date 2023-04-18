@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NZ-1" package="QFN48" speed="6" partNumber="GW1NZ-LV1QN48C6/I5"/>
+    <FileList>
+        <File path="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\gowin_rpll\video_pll.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\top.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\rgb_timing.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\impl\gwsynthesis\lcd_test.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
