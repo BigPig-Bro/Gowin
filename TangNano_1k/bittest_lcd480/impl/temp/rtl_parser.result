@@ -18,10 +18,10 @@
    {
     "InstFile" : "E:/FPGA_work/Gowin/TangNano_1k/bittest_lcd480/src/top.v",
     "InstLine" : 35,
-    "InstName" : "vga_timing_m0",
-    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_1k/bittest_lcd480/src/vga_timing.v",
+    "InstName" : "rgb_timing_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_1k/bittest_lcd480/src/rgb_timing.v",
     "ModuleLine" : 1,
-    "ModuleName" : "vga_timing"
+    "ModuleName" : "rgb_timing"
    }
   ]
  }

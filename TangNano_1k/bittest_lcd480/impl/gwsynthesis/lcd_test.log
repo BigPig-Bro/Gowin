@@ -1,14 +1,15 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v'
-Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\vga_timing.v'
 Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\gowin_rpll\video_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\rgb_timing.v'
 Compiling module 'top'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v":1)
 Compiling module 'video_pll'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\gowin_rpll\video_pll.v":9)
-Compiling module 'vga_timing'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\vga_timing.v":1)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\vga_timing.v":55)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\vga_timing.v":62)
-WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'rst'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v":37)
+Compiling module 'rgb_timing'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\rgb_timing.v":1)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\rgb_timing.v":38)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\rgb_timing.v":42)
+WARN  (EX3670) : Actual bit length 10 differs from formal bit length 11 for port 'rgb_x'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v":41)
+WARN  (EX3670) : Actual bit length 10 differs from formal bit length 11 for port 'rgb_y'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v":42)
 NOTE  (EX0101) : Current top module is "top"
 WARN  (EX0206) : Instance "rpll_inst" 's parameter "DEVICE" value invalid("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\gowin_rpll\video_pll.v":38)
 WARN  (EX0210) : Invalid VCO frequency "(FCLKIN*(FBDIV_SEL+1)*ODIV_SEL)/(IDIV_SEL+1)" to instance "rpll_inst", suitable range is from 400MHz to 800MHz("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\gowin_rpll\video_pll.v":38)

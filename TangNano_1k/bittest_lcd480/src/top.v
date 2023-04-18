@@ -32,14 +32,13 @@ video_pll video_pll_m0(
 	.clkout 	(lcd_dclk 	)
 	);
 
-vga_timing vga_timing_m0(
-	.clk  		(lcd_dclk 	),
-	.rst  		(0 			),
-	.active_x 	(lcd_x 		),
-	.active_y 	(lcd_y 		),
-	.hs  		(lcd_hs 	),
-	.vs  		(lcd_vs 	),
-	.de  		(lcd_de 	)
+rgb_timing rgb_timing_m0(
+	.rgb_clk	(lcd_dclk	),	
+	.rgb_rst_n	(1'b1		),	
+	.rgb_hs		(lcd_hs		),
+	.rgb_vs		(lcd_vs		),
+	.rgb_de		(lcd_de		),
+	.rgb_x		(lcd_x		),
+	.rgb_y		(lcd_y		)
 	);
-
 endmodule

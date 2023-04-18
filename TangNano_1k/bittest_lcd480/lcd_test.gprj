@@ -6,8 +6,8 @@
     <Device name="GW1NZ-1" pn="GW1NZ-LV1QN48C6/I5">gw1nz1-015</Device>
     <FileList>
         <File path="src/gowin_rpll/video_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/rgb_timing.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
-        <File path="src/vga_timing.v" type="file.verilog" enable="1"/>
         <File path="src/lcd.cst" type="file.cst" enable="1"/>
     </FileList>
 </Project>
