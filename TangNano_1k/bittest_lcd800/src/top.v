@@ -1,7 +1,7 @@
 module top (
 	input clk,    // Clock
 	
-	output              lcd_dclk,	
+	output              lcd_clk,	
 	output              lcd_hs,    //lcd horizontal synchronization
 	output              lcd_vs,    //lcd vertical synchronization        
 	output              lcd_de,    //lcd data enable     
@@ -29,11 +29,11 @@ lcd_x < PIXEL_NUM * 15 / 16 ? 16'B00000_000000_00010:				  			      16'B00000_00
 
 video_pll video_pll_m0(
 	.clkin  	(clk 		),
-	.clkout 	(lcd_dclk 	)
+	.clkout 	(lcd_clk 	)
 	);
 
 rgb_timing rgb_timing_m0(
-	.rgb_clk	(lcd_dclk	),	
+	.rgb_clk	(lcd_clk	),	
 	.rgb_rst_n	(1'b1		),	
 	.rgb_hs		(lcd_hs		),
 	.rgb_vs		(lcd_vs		),

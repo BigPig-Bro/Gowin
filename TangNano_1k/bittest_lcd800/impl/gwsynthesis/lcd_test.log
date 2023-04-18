@@ -1,8 +1,8 @@
 GowinSynthesis start
 Running parser ...
 Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\gowin_rpll\video_pll.v'
-Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\top.v'
 Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\rgb_timing.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\top.v'
 Compiling module 'top'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\top.v":1)
 Compiling module 'video_pll'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\gowin_rpll\video_pll.v":9)
 Compiling module 'rgb_timing'("E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd800\src\rgb_timing.v":1)

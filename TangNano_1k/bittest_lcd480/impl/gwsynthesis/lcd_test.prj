@@ -5,8 +5,8 @@
     <Device id="GW1NZ-1" package="QFN48" speed="6" partNumber="GW1NZ-LV1QN48C6/I5"/>
     <FileList>
         <File path="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\gowin_rpll\video_pll.v" type="verilog"/>
-        <File path="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v" type="verilog"/>
         <File path="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\rgb_timing.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_1k\bittest_lcd480\src\top.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

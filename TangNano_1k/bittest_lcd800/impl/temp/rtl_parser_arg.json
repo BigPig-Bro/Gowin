@@ -5,11 +5,11 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/Gowin/TangNano_1k/bittest_lcd800/src/top.v",
+   "Path" : "E:/FPGA_work/Gowin/TangNano_1k/bittest_lcd800/src/rgb_timing.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/Gowin/TangNano_1k/bittest_lcd800/src/rgb_timing.v",
+   "Path" : "E:/FPGA_work/Gowin/TangNano_1k/bittest_lcd800/src/top.v",
    "Type" : "verilog"
   }
  ],
