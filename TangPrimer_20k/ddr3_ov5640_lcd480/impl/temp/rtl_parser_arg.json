@@ -1,51 +1,51 @@
 {
  "Files" : [
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/cmos_8_16bit.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/cmos_8_16bit.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/ddr3_memory_interface/DDR3MI.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/ddr3_memory_interface/DDR3MI.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/fifo_hs/video_fifo.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/fifo_hs/video_fifo.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/gowin_rpll/cmos_pll.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/gowin_rpll/cmos_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/gowin_rpll/mem_pll.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/gowin_rpll/mem_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/gowin_rpll/sys_pll.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/gowin_rpll/sys_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/iic_init/iic_ctrl.sv",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/iic_init/iic_ctrl.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/iic_init/iic_master.sv",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/iic_init/iic_master.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/syn_gen.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/syn_gen.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/testpattern.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/testpattern.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/top.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+   "Path" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
    "Type" : "verilog"
   }
  ],
@@ -53,7 +53,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "E:/FPGA_work/GOWIN/OV5640_LCD480_DDR3/impl/temp/rtl_parser.result",
+ "ResultFile" : "E:/FPGA_work/Gowin/TangPrimer_20k/ddr3_ov5640_lcd480/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"
