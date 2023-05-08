@@ -1,0 +1,12 @@
+-d E:\FPGA_work\Gowin\TangNano_4k\bittest_hdmi720P\impl\gwsynthesis\lcd_test.vg
+-p GW1NSR-4C-QFN48P-6
+-pn GW1NSR-LV4CQN48PC6/I5
+-cst E:\FPGA_work\Gowin\TangNano_4k\bittest_hdmi720P\src\lcd.cst
+-cfg E:\FPGA_work\Gowin\TangNano_4k\bittest_hdmi720P\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
