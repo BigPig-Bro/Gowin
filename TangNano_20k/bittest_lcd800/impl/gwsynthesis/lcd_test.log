@@ -1,0 +1,32 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\gowin_rpll\video_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\rgb_timing.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\top.v'
+Compiling module 'top'("E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\top.v":1)
+Compiling module 'video_pll'("E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\gowin_rpll\video_pll.v":10)
+Compiling module 'rgb_timing'("E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\rgb_timing.v":1)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\rgb_timing.v":38)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\rgb_timing.v":42)
+WARN  (EX3670) : Actual bit length 10 differs from formal bit length 11 for port 'rgb_x'("E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\top.v":41)
+WARN  (EX3670) : Actual bit length 10 differs from formal bit length 11 for port 'rgb_y'("E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\src\top.v":42)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\impl\gwsynthesis\lcd_test.vg" completed
+[100%] Generate report file "E:\FPGA_work\Gowin\TangNano_20k\bittest_lcd800\impl\gwsynthesis\lcd_test_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,10 @@
+[
+ {
+  "InstFile" : "E:/FPGA_work/Gowin/TangNano_20k/ws2812/src/ws2812.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_20k/ws2812/src/ws2812.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top"
+ }
+]
