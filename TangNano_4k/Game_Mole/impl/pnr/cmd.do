@@ -1,0 +1,12 @@
+-d E:\FPGA_work\Gowin\TangNano_4k\Game_Mole\impl\gwsynthesis\VGA_CardGame.vg
+-p GW1NSR-4C-QFN48P-6
+-pn GW1NSR-LV4CQN48PC6/I5
+-cst E:\FPGA_work\Gowin\TangNano_4k\Game_Mole\src\top.cst
+-cfg E:\FPGA_work\Gowin\TangNano_4k\Game_Mole\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23

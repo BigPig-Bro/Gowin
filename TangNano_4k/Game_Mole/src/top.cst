@@ -1,0 +1,19 @@
+
+IO_LOC "clk" 45;
+IO_LOC "uart_rx" 15;
+IO_LOC "rst_n" 14;
+
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+IO_PORT "uart_rx" IO_TYPE=LVCMOS33;
+IO_PORT "rst_n" IO_TYPE=LVCMOS33;
+
+//============ HDMI ===============
+
+IO_LOC "O_tmds_clk_p" 28,27;
+IO_PORT "O_tmds_clk_p" PULL_MODE=NONE DRIVE=3.5;
+IO_LOC "O_tmds_data_p[0]" 30,29;
+IO_PORT "O_tmds_data_p[0]" PULL_MODE=NONE DRIVE=3.5;
+IO_LOC "O_tmds_data_p[1]" 32,31;
+IO_PORT "O_tmds_data_p[1]" PULL_MODE=NONE DRIVE=3.5;
+IO_LOC "O_tmds_data_p[2]" 35,34;
+IO_PORT "O_tmds_data_p[2]" PULL_MODE=NONE DRIVE=3.5;

@@ -1,0 +1,98 @@
+[
+ {
+  "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+    "InstLine" : 30,
+    "InstName" : "cmos_pll_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/gowin_pllvr/cmos_pll.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "cmos_pll"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+    "InstLine" : 45,
+    "InstName" : "iic_ctrl_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/iic_init/iic_ctrl.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "iic_ctrl",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/iic_init/iic_ctrl.sv",
+      "InstLine" : 92,
+      "InstName" : "iic_master_m0",
+      "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/iic_init/iic_master.sv",
+      "ModuleLine" : 1,
+      "ModuleName" : "iic_master"
+     }
+    ]
+   },
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+    "InstLine" : 53,
+    "InstName" : "cmos_8_16bit_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/cmos_8_16bit.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "cmos_8_16bit"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+    "InstLine" : 62,
+    "InstName" : "video_timing_data_m0",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/video_timing_data.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "video_timing_data",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/video_timing_data.v",
+      "InstLine" : 31,
+      "InstName" : "video_fifo_m0",
+      "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/fifo_hs/video_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "video_fifo"
+     },
+     {
+      "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/video_timing_data.v",
+      "InstLine" : 79,
+      "InstName" : "rgb_timing_m0",
+      "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/rgb_timing.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "rgb_timing"
+     }
+    ]
+   },
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+    "InstLine" : 84,
+    "InstName" : "u_tmds_rpll",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/gowin_pllvr/TMDS_rPLL.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "TMDS_rPLL"
+   },
+   {
+    "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+    "InstLine" : 101,
+    "InstName" : "DVI_TX_Top_inst",
+    "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleLine" : 1042,
+    "ModuleName" : "DVI_TX_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/dvi_tx/DVI_TX_Top.v",
+      "InstLine" : 1073,
+      "InstName" : "rgb2dvi_inst",
+      "ModuleFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/dvi_tx/DVI_TX_Top.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "~rgb2dvi.DVI_TX_Top"
+     }
+    ]
+   }
+  ]
+ }
+]

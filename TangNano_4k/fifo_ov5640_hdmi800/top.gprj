@@ -1,0 +1,20 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NSR-4C" pn="GW1NSR-LV4CQN48PC6/I5">gw1nsr4c-000</Device>
+    <FileList>
+        <File path="src/cmos_8_16bit.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi_tx/DVI_TX_Top.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_hs/video_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pllvr/TMDS_rPLL.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pllvr/cmos_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/iic_ctrl.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/iic_master.sv" type="file.verilog" enable="1"/>
+        <File path="src/rgb_timing.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/video_timing_data.v" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

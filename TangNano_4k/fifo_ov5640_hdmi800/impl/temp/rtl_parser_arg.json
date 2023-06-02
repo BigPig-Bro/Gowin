@@ -1,0 +1,52 @@
+{
+ "Files" : [
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/cmos_8_16bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/fifo_hs/video_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/video_timing_data.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/gowin_pllvr/cmos_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/gowin_pllvr/TMDS_rPLL.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/dvi_tx/DVI_TX_Top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/iic_init/iic_ctrl.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/iic_init/iic_master.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/src/rgb_timing.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "E:/FPGA_work/Gowin/TangNano_4k/fifo_ov5640_hdmi800/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

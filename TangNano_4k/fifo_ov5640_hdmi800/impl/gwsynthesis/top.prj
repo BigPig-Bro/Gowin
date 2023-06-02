@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NSR-4C" package="QFN48P" speed="6" partNumber="GW1NSR-LV4CQN48PC6/I5"/>
+    <FileList>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\cmos_8_16bit.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\fifo_hs\video_fifo.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\top.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\video_timing_data.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\gowin_pllvr\cmos_pll.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\gowin_pllvr\TMDS_rPLL.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\dvi_tx\DVI_TX_Top.v" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\iic_init\iic_ctrl.sv" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\iic_init\iic_master.sv" type="verilog"/>
+        <File path="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\src\rgb_timing.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\FPGA_work\Gowin\TangNano_4k\fifo_ov5640_hdmi800\impl\gwsynthesis\top.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
