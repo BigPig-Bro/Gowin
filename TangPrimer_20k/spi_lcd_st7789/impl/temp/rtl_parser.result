@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "D:/Users/HUIP/Desktop/SPI_LCD_ST7789_16bitRGB/src/spi_top.sv",
+  "InstLine" : 1,
+  "InstName" : "spi_top",
+  "ModuleFile" : "D:/Users/HUIP/Desktop/SPI_LCD_ST7789_16bitRGB/src/spi_top.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "spi_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Users/HUIP/Desktop/SPI_LCD_ST7789_16bitRGB/src/spi_top.sv",
+    "InstLine" : 173,
+    "InstName" : "spi_master_m0",
+    "ModuleFile" : "D:/Users/HUIP/Desktop/SPI_LCD_ST7789_16bitRGB/src/spi_master.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "spi_master"
+   }
+  ]
+ }
+]
