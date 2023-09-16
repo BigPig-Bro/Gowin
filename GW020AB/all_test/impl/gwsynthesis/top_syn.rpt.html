@@ -1,0 +1,1461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>E:\FPGA_work\Gowin\GW020A\all_test\src\dvi_tx\DVI_TX_Top.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\gowin_rpll\TMDS_rPLL.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\hdmi_top.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\top.sv<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\vga_timing.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\ws2812_top.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\gowin_rpll\mem_pll.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\i2c_master\i2c_config.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\i2c_master\i2c_master_bit_ctrl.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\i2c_master\i2c_master_byte_ctrl.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\i2c_master\i2c_master_defines.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\i2c_master\i2c_master_top.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\i2c_master\timescale.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\cmos_8_16bit.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\cmos_top.sv<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\dvp\lut_ov5640_rgb565_1280_720.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\video_frame_buffer\Video_Frame_Buffer_Top.v<br>
+E:\FPGA_work\Gowin\GW020A\all_test\src\ddr3_memory_interface\DDR3MI.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Version</td>
+<td>V1.9.8.11</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2A-LV18PG256C8/I7</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW2A-18</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sat Sep 09 22:36:22 2023
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2023 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>top</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 410.973MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.25s, Elapsed time = 0h 0m 0.246s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.593s, Elapsed time = 0h 0m 0.55s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.375s, Elapsed time = 0h 0m 0.371s, Peak memory usage = 410.973MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.078s, Elapsed time = 0h 0m 0.09s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.007s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.032s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.009s, Peak memory usage = 410.973MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.281s, Elapsed time = 0h 0m 0.285s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.25s, Elapsed time = 0h 0m 0.254s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.091s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s, Peak memory usage = 410.973MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.328s, Elapsed time = 0h 0m 0.306s, Peak memory usage = 410.973MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.484s, Elapsed time = 0h 0m 0.433s, Peak memory usage = 410.973MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s, Peak memory usage = 410.973MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>145</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>138</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>14</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>97</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>18</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTLVDS_OBUF</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_OBUF</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_IOBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>2062</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>141</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>48</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFS</td>
+<td>15</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>18</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
+<td>47</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>64</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>69</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>1114</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>533</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFNP</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>3423</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>629</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>907</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>1887</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>322</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>322</td>
+</tr>
+<tr>
+<td class="label"><b>SSRAM </b></td>
+<td>117</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16S4</td>
+<td>46</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16SDP4</td>
+<td>71</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>41</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>41</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>104</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIDES8_MEM</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8</td>
+<td>24</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8_MEM</td>
+<td>20</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER10</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIODELAY</td>
+<td>40</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDQS</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDHCEN</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprPLL</td>
+<td>2</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>4488(3464 LUTs, 322 ALUs, 117 SSRAMs) / 20736</td>
+<td>22%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>2062 / 16173</td>
+<td>13%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 16173</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>2062 / 16173</td>
+<td>13%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>16 / 46</td>
+<td>35%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>clk</td>
+<td>Base</td>
+<td>37.037</td>
+<td>27.0</td>
+<td>0.000</td>
+<td>18.519</td>
+<td> </td>
+<td> </td>
+<td>clk_ibuf/I </td>
+</tr>
+<tr>
+<td>cmos_pclk</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>cmos_pclk_ibuf/I </td>
+</tr>
+<tr>
+<td>cmos_16bit_clk</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/cmos_8_16bit_m0/de_o_s0/Q </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>2.511</td>
+<td>398.3</td>
+<td>0.000</td>
+<td>1.255</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>2.511</td>
+<td>398.3</td>
+<td>0.000</td>
+<td>1.255</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>5.022</td>
+<td>199.1</td>
+<td>0.000</td>
+<td>2.511</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>7.533</td>
+<td>132.8</td>
+<td>0.000</td>
+<td>3.766</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUTD3 </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>2.694</td>
+<td>371.3</td>
+<td>0.000</td>
+<td>1.347</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>2.694</td>
+<td>371.3</td>
+<td>0.000</td>
+<td>1.347</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>5.387</td>
+<td>185.6</td>
+<td>0.000</td>
+<td>2.694</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>8.081</td>
+<td>123.8</td>
+<td>0.000</td>
+<td>4.040</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUTD3 </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>13.468</td>
+<td>74.3</td>
+<td>0.000</td>
+<td>6.734</td>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUT</td>
+<td>hdmi_top_m0/u_tmds_rpll/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT </td>
+</tr>
+<tr>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>10.044</td>
+<td>99.6</td>
+<td>0.000</td>
+<td>5.022</td>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUT</td>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>No.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk</td>
+<td>27.0(MHz)</td>
+<td>167.4(MHz)</td>
+<td>8</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>cmos_pclk</td>
+<td>100.0(MHz)</td>
+<td>794.9(MHz)</td>
+<td>2</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>cmos_16bit_clk</td>
+<td>100.0(MHz)</td>
+<td>225.9(MHz)</td>
+<td>6</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>hdmi_top_m0/cmos_top_m0/mem_pll_m0/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>398.3(MHz)</td>
+<td>1364.3(MHz)</td>
+<td>1</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>74.3(MHz)</td>
+<td>120.1(MHz)</td>
+<td>12</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>6</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>99.6(MHz)</td>
+<td>136.7(MHz)</td>
+<td>10</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-2.401</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>43.085</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>40.685</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gwmc_bank_ctrl/updata_dqs_ack_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/cs_memsync_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>40.176</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>40.346</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1657</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>40.526</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gwmc_bank_ctrl/updata_dqs_ack_s0/CLK</td>
+</tr>
+<tr>
+<td>40.758</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gwmc_bank_ctrl/updata_dqs_ack_s0/Q</td>
+</tr>
+<tr>
+<td>40.995</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/n319_s17/I1</td>
+</tr>
+<tr>
+<td>41.550</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/n319_s17/F</td>
+</tr>
+<tr>
+<td>41.787</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/n319_s14/I2</td>
+</tr>
+<tr>
+<td>42.240</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/n319_s14/F</td>
+</tr>
+<tr>
+<td>42.477</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/n319_s12/I3</td>
+</tr>
+<tr>
+<td>42.848</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/n319_s12/F</td>
+</tr>
+<tr>
+<td>43.085</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/cs_memsync_2_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>40.404</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>40.575</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>285</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>40.755</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/cs_memsync_2_s0/CLK</td>
+</tr>
+<tr>
+<td>40.720</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/cs_memsync_2_s0</td>
+</tr>
+<tr>
+<td>40.685</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/cs_memsync_2_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.228</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 1.379, 53.888%; route: 0.948, 37.046%; tC2Q: 0.232, 9.066%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-1.103</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>41.787</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>40.685</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[1].u_ddr3_phy_data_lane/recalib_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/recalib_s_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>40.176</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>40.346</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1657</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>40.526</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[1].u_ddr3_phy_data_lane/recalib_s0/CLK</td>
+</tr>
+<tr>
+<td>40.758</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/data_lane_gen[1].u_ddr3_phy_data_lane/recalib_s0/Q</td>
+</tr>
+<tr>
+<td>40.995</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/recalib_Z_s/I1</td>
+</tr>
+<tr>
+<td>41.550</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/u_ddr_phy_wd/recalib_Z_s/F</td>
+</tr>
+<tr>
+<td>41.787</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/recalib_s_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>40.404</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>40.575</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>285</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>40.755</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/recalib_s_0_s0/CLK</td>
+</tr>
+<tr>
+<td>40.720</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/recalib_s_0_s0</td>
+</tr>
+<tr>
+<td>40.685</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr3_sync/recalib_s_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.228</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.555, 44.013%; route: 0.474, 37.589%; tC2Q: 0.232, 18.398%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-1.103</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>553.800</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>552.697</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/uddcntln_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/updata_ack_d_0_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>552.189</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>552.359</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>285</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>552.539</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/uddcntln_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>552.771</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>2</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/uddcntln_d_0_s0/Q</td>
+</tr>
+<tr>
+<td>553.008</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/n884_s0/I1</td>
+</tr>
+<tr>
+<td>553.563</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/n884_s0/F</td>
+</tr>
+<tr>
+<td>553.800</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/updata_ack_d_0_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>552.417</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>552.587</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1657</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>552.767</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/updata_ack_d_0_s0/CLK</td>
+</tr>
+<tr>
+<td>552.732</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/updata_ack_d_0_s0</td>
+</tr>
+<tr>
+<td>552.697</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/updata_ack_d_0_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.228</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.555, 44.013%; route: 0.474, 37.589%; tC2Q: 0.232, 18.398%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-0.952</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>553.650</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>552.698</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr_rsti_reg_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_9_s</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>552.189</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>552.359</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>285</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>552.539</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr_rsti_reg_2_s0/CLK</td>
+</tr>
+<tr>
+<td>552.771</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>1189</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr_rsti_reg_2_s0/Q</td>
+</tr>
+<tr>
+<td>553.008</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/n774_s0/I2</td>
+</tr>
+<tr>
+<td>553.470</td>
+<td>0.462</td>
+<td>tINS</td>
+<td>FR</td>
+<td>10</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/n774_s0/F</td>
+</tr>
+<tr>
+<td>553.650</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_9_s/WRE</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>552.417</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>552.587</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1657</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>552.767</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_9_s/CLK</td>
+</tr>
+<tr>
+<td>552.732</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_9_s</td>
+</tr>
+<tr>
+<td>552.698</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_9_s</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.228</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.462, 41.584%; route: 0.417, 37.534%; tC2Q: 0.232, 20.882%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-0.952</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>553.650</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>552.698</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr_rsti_reg_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_8_s</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>552.189</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>552.359</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>285</td>
+<td>hdmi_top_m0/u_clkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>552.539</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr_rsti_reg_2_s0/CLK</td>
+</tr>
+<tr>
+<td>552.771</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>1189</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/ddr_rsti_reg_2_s0/Q</td>
+</tr>
+<tr>
+<td>553.008</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/n774_s0/I2</td>
+</tr>
+<tr>
+<td>553.470</td>
+<td>0.462</td>
+<td>tINS</td>
+<td>FR</td>
+<td>10</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/n774_s0/F</td>
+</tr>
+<tr>
+<td>553.650</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_8_s/WRE</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>552.417</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>552.587</td>
+<td>0.170</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1657</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>552.767</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_8_s/CLK</td>
+</tr>
+<tr>
+<td>552.732</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_8_s</td>
+</tr>
+<tr>
+<td>552.698</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>hdmi_top_m0/cmos_top_m0/DDR3_Memory_Interface_Top_inst/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_0_8_s</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.228</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 0.462, 41.584%; route: 0.417, 37.534%; tC2Q: 0.232, 20.882%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.180, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

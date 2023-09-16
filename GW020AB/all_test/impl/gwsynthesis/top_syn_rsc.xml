@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="25" Alu="24" Lut="2">
+    <SubModule name="ws2812_top_m0" Register="37" Alu="4" Lut="85"/>
+    <SubModule name="hdmi_top_m0" Lut="53">
+        <SubModule name="cmos_top_m0" Register="32" Alu="31" Lut="14">
+            <SubModule name="mem_pll_m0"/>
+            <SubModule name="i2c_config_m0" Register="13" Lut="34">
+                <SubModule name="i2c_master_top_m0" Register="17" Lut="718">
+                    <SubModule name="byte_controller" Register="23" Lut="49">
+                        <SubModule name="bit_controller" Register="71" Alu="15" Lut="97"/>
+                    </SubModule>
+                </SubModule>
+            </SubModule>
+            <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3"/>
+            <SubModule name="Video_Frame_Buffer_Top_inst" Register="400" Alu="38" Lut="796" Bsram="8" Ssram="6"/>
+            <SubModule name="DDR3_Memory_Interface_Top_inst" Register="1296" Alu="102" Lut="1364" Bsram="8" Ssram="111"/>
+        </SubModule>
+        <SubModule name="vga_timing_m0" Register="46" Alu="40" Lut="32"/>
+        <SubModule name="u_tmds_rpll"/>
+        <SubModule name="DVI_TX_Top_inst" Register="73" Alu="68" Lut="217"/>
+    </SubModule>
+</Module>

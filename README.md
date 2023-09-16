@@ -17,3 +17,5 @@
 + [Tang Nano 4K](https://wiki.sipeed.com/tang4k)：基于 GW1NSR-LV4C 的一款 FPGA 开发板，Sipeed出品
 + [Tang Nano 1K](https://wiki.sipeed.com/tang1k)：基于 GW1NZ-LV1 的一款 FPGA 开发板，Sipeed 出品
 
++ GW020AB：基于Tang Primer 20K二次开发的一款FPGA开发板，BigPig-Bro出品，其中A款为原生Sipeed下载器接口，B款为独立USB+标准JTAG接口(FT方案下载) 闲鱼搜大猪蹄子 高云 FPGA可购买
++ GW020C：基于GW2A-LV18的一款FPGA开发板，BigPig-Bro出品，暂未开放
