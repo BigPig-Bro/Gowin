@@ -14,7 +14,7 @@ module top(
   //output              cmos_xclk,         //cmos externl clock 
     input   [7:0]       cmos_db,           //cmos data
     output              cmos_rst_n,        //cmos reset 
-//  output              cmos_pwdn,         //cmos power down
+    output              cmos_pwdn,         //cmos power down
 
     output [14-1:0]             ddr_addr,       //ROW_WIDTH=14
     output [3-1:0]              ddr_bank,       //BANK_WIDTH=3
@@ -174,7 +174,7 @@ assign exter_io2[35] = ~clk_A ;
     .cmos_pclk   (cmos_pclk  ),   
     .cmos_db     (cmos_db    ),   
     .cmos_rst_n  (cmos_rst_n ),   
-
+    .cmos_pwdn    (cmos_pwdn    ),
      .ddr_addr      (ddr_addr       ),
      .ddr_bank      (ddr_bank       ),
      .ddr_cs        (ddr_cs         ),

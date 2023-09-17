@@ -10,7 +10,7 @@ module hdmi_top (
   //output              cmos_xclk,         //cmos externl clock 
     input   [7:0]       cmos_db,           //cmos data
     output              cmos_rst_n,        //cmos reset 
-//  output              cmos_pwdn,         //cmos power down
+    output              cmos_pwdn,         //cmos power down
 
     output [14-1:0]             ddr_addr,       //ROW_WIDTH=14
     output [3-1:0]              ddr_bank,       //BANK_WIDTH=3
@@ -42,7 +42,7 @@ wire       lcd_hs,lcd_vs,lcd_de,lcd_dclk;
 /////////////////////////////////////////////////////////////////////////////////////////
 wire [4:0] cmos_r,cmos_b;
 wire [5:0] cmos_g;
-
+assign cmos_pwdn = 1'b1;
 cmos_top cmos_top_m0(
     .clk        (clk         ),
     .rst_n      (rst_n       ),
