@@ -42,7 +42,7 @@ wire       lcd_hs,lcd_vs,lcd_de,lcd_dclk;
 /////////////////////////////////////////////////////////////////////////////////////////
 wire [4:0] cmos_r,cmos_b;
 wire [5:0] cmos_g;
-assign cmos_pwdn = 1'b1;
+assign cmos_pwdn = 1'b0;
 cmos_top cmos_top_m0(
     .clk        (clk         ),
     .rst_n      (rst_n       ),
