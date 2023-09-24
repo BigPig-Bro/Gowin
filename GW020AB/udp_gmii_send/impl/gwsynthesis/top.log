@@ -1,0 +1,40 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\udp_gmii_send\src\crc.v'
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv'
+WARN  (EX3801) : Parameter 'IP_HEAD_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":31)
+WARN  (EX3801) : Parameter 'DES_MAC_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":32)
+WARN  (EX3801) : Parameter 'BOARD_MAC_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":33)
+WARN  (EX3801) : Parameter 'DATA_TYPE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":34)
+WARN  (EX3801) : Parameter 'MAC_DATA' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":35)
+Analyzing Verilog file 'D:\Users\HUIP\Desktop\udp_gmii_send\src\gowin_rpll\GMII_pll.v'
+Compiling module 'GMII_send'("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":1)
+Compiling module 'GMII_pll'("D:\Users\HUIP\Desktop\udp_gmii_send\src\gowin_rpll\GMII_pll.v":10)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":75)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":90)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":99)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":108)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":116)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":124)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":143)
+Compiling module 'crc'("D:\Users\HUIP\Desktop\udp_gmii_send\src\crc.v":3)
+NOTE  (EX0101) : Current top module is "GMII_send"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "D:\Users\HUIP\Desktop\udp_gmii_send\impl\gwsynthesis\top.vg" completed
+[100%] Generate report file "D:\Users\HUIP\Desktop\udp_gmii_send\impl\gwsynthesis\top_syn.rpt.html" completed
+GowinSynthesis finish
