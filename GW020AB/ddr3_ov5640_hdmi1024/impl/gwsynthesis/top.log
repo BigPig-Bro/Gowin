@@ -1,0 +1,142 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\cmos_8_16bit.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\dvi_tx\DVI_TX_Top.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\fifo_hs\video_fifo.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\gowin_rpll\TMDS_rPLL.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\gowin_rpll\cmos_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\gowin_rpll\mem_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\gowin_rpll\sys_pll.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_config.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_bit_ctrl.v'
+Analyzing included file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_defines.v'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_bit_ctrl.v":141)
+Back to file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_bit_ctrl.v'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_bit_ctrl.v":141)
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_byte_ctrl.v'
+Analyzing included file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_defines.v'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_byte_ctrl.v":73)
+Back to file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_byte_ctrl.v'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_byte_ctrl.v":73)
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_defines.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\i2c_master_top.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\i2c_master\timescale.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv'
+WARN  (EX3801) : Parameter 'DELAY' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":14)
+WARN  (EX3801) : Parameter 'STATE_DELAY' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":16)
+WARN  (EX3801) : Parameter 'STATE_INIT' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":17)
+WARN  (EX3801) : Parameter 'STATE_FINISH' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":18)
+WARN  (EX3801) : Parameter 'STATE_WAIT_BUSY' becomes localparam in 'iic_ctrl' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":19)
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv'
+WARN  (EX2478) : Non-net output port 'recv_data' cannot be initialized at declaration in SystemVerilog mode("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX2478) : Non-net output port 'iic_scl' cannot be initialized at declaration in SystemVerilog mode("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":24)
+WARN  (EX3801) : Parameter 'CLK_DIV' becomes localparam in 'iic_master' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":35)
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\lut_ov5640_rgb565_1024_768.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\syn_gen.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\testpattern.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v'
+Undeclared symbol 'hdmi_hpd', assumed default net type 'wire'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v":97)
+Undeclared symbol 'cmos_clk', assumed default net type 'wire'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v":114)
+Undeclared symbol 'cmos_16bit_wr', assumed default net type 'wire'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v":173)
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\vga_timing.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v'
+WARN  (EX3073) : Port 'active_x' remains unconnected for this instance("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v":192)
+Compiling module 'top'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v":1)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v":106)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\top.v":109)
+Compiling module 'cmos_pll'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\gowin_rpll\cmos_pll.v":9)
+Compiling module 'mem_pll'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\gowin_rpll\mem_pll.v":9)
+Compiling module 'iic_ctrl(CLK_FRE=27)'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":1)
+Extracting RAM for identifier 'init_cmd'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":32)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":46)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":62)
+Compiling module 'iic_master(CLK_FRE=27)'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":1)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":38)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":83)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":85)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":103)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":105)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":124)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":126)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":145)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":147)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":167)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":169)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":191)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":213)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 8 for port 'slave_addr'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_ctrl.sv":92)
+Compiling module 'cmos_8_16bit'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\cmos_8_16bit.v":1)
+Compiling module 'vga_timing'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\vga_timing.v":1)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\vga_timing.v":57)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\vga_timing.v":64)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\video_frame_buffer\Video_Frame_Buffer_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\ddr3_memory_interface\DDR3MI.v":0)
+Compiling module 'TMDS_rPLL'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\gowin_rpll\TMDS_rPLL.v":9)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\dvi_tx\DVI_TX_Top.v":0)
+Compiling module '**'("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\dvi_tx\DVI_TX_Top.v":0)
+NOTE  (EX0101) : Current top module is "top"
+WARN  (EX0211) : The output port "recv_data[7]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[6]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[5]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[4]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[3]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[2]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[1]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+WARN  (EX0211) : The output port "recv_data[0]" of module "iic_master(CLK_FRE=27)" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\src\iic_init\iic_master.sv":19)
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\impl\gwsynthesis\top.vg" completed
+WARN  (CK3000) : Can't calculate clocks' relationship between: "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "cmos_8_16bit_m0/cmos_16bit_clk_1"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "cmos_8_16bit_m0/cmos_16bit_clk_1" and "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_clkdiv/CLKOUT.default_gen_clk" and "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "u_clkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "Pout_vs_dn[4]_3" and "u_clkdiv/CLKOUT.default_gen_clk"
+[100%] Generate report file "E:\FPGA_work\Gowin\GW020AB\ddr3_ov5640_hdmi1024\impl\gwsynthesis\top_syn.rpt.html" completed
+GowinSynthesis finish
