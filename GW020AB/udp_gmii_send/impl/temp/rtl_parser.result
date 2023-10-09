@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "E:/FPGA_work/Gowin/GW020AB/udp_gmii_send/src/GMII_send.sv",
-    "InstLine" : 24,
+    "InstLine" : 25,
     "InstName" : "GMII_pll_m0",
     "ModuleFile" : "E:/FPGA_work/Gowin/GW020AB/udp_gmii_send/src/gowin_rpll/GMII_pll.v",
     "ModuleLine" : 10,
@@ -17,7 +17,7 @@
    },
    {
     "InstFile" : "E:/FPGA_work/Gowin/GW020AB/udp_gmii_send/src/GMII_send.sv",
-    "InstLine" : 165,
+    "InstLine" : 167,
     "InstName" : "crc32_m0",
     "ModuleFile" : "E:/FPGA_work/Gowin/GW020AB/udp_gmii_send/src/crc.v",
     "ModuleLine" : 3,

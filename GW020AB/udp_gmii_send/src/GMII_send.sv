@@ -10,6 +10,7 @@ module GMII_send#(
 	input  				rst_n, 	
 	input 				sys_clk,
 
+	output				GMII_RST_N,
 	output 				GMII_GTXCLK,
 	output reg  [7:0] 	GMII_TXD, 		
 	output reg 			GMII_TXEN, 		
@@ -41,6 +42,7 @@ enum {IDLE, CHECK_SUM, PACKET_HEAD, SEND_MAC, SEND_HEADER, SEND_DATA, SEND_CRC,D
 
 reg [ 3:0] state;
 reg [10:0] send_cnt;
+assign GMII_RST_N = rst_n;
 
 always@(posedge GMII_GTXCLK)begin
 	if(!rst_n)begin

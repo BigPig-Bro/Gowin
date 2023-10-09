@@ -1,4 +1,5 @@
 {
+ "Device" : "GW2A-18C",
  "Files" : [
   {
    "Path" : "E:/FPGA_work/Gowin/GW020AB/udp_gmii_send/src/GMII_send.sv",

@@ -1,23 +1,23 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'D:\Users\HUIP\Desktop\udp_gmii_send\src\crc.v'
-Analyzing Verilog file 'D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv'
-WARN  (EX3801) : Parameter 'IP_HEAD_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":31)
-WARN  (EX3801) : Parameter 'DES_MAC_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":32)
-WARN  (EX3801) : Parameter 'BOARD_MAC_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":33)
-WARN  (EX3801) : Parameter 'DATA_TYPE' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":34)
-WARN  (EX3801) : Parameter 'MAC_DATA' becomes localparam in 'GMII_send' with formal parameter declaration list("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":35)
-Analyzing Verilog file 'D:\Users\HUIP\Desktop\udp_gmii_send\src\gowin_rpll\GMII_pll.v'
-Compiling module 'GMII_send'("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":1)
-Compiling module 'GMII_pll'("D:\Users\HUIP\Desktop\udp_gmii_send\src\gowin_rpll\GMII_pll.v":10)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":75)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":90)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":99)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":108)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":116)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":124)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\HUIP\Desktop\udp_gmii_send\src\GMII_send.sv":143)
-Compiling module 'crc'("D:\Users\HUIP\Desktop\udp_gmii_send\src\crc.v":3)
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv'
+WARN  (EX3801) : Parameter 'IP_HEAD_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":32)
+WARN  (EX3801) : Parameter 'DES_MAC_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":33)
+WARN  (EX3801) : Parameter 'BOARD_MAC_CODE' becomes localparam in 'GMII_send' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":34)
+WARN  (EX3801) : Parameter 'DATA_TYPE' becomes localparam in 'GMII_send' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":35)
+WARN  (EX3801) : Parameter 'MAC_DATA' becomes localparam in 'GMII_send' with formal parameter declaration list("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":36)
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\crc.v'
+Analyzing Verilog file 'E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\gowin_rpll\GMII_pll.v'
+Compiling module 'GMII_send'("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":1)
+Compiling module 'GMII_pll'("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\gowin_rpll\GMII_pll.v":10)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":77)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":92)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":101)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":110)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":118)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":126)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\GMII_send.sv":145)
+Compiling module 'crc'("E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\src\crc.v":3)
 NOTE  (EX0101) : Current top module is "GMII_send"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
@@ -35,6 +35,8 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "D:\Users\HUIP\Desktop\udp_gmii_send\impl\gwsynthesis\top.vg" completed
-[100%] Generate report file "D:\Users\HUIP\Desktop\udp_gmii_send\impl\gwsynthesis\top_syn.rpt.html" completed
+[95%] Generate netlist file "E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\impl\gwsynthesis\top.vg" completed
+WARN  (CK3000) : Can't calculate clocks' relationship between: "n1883_6" and "GMII_pll_m0/rpll_inst/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "GMII_pll_m0/rpll_inst/CLKOUT.default_gen_clk" and "n1883_6"
+[100%] Generate report file "E:\FPGA_work\Gowin\GW020AB\udp_gmii_send\impl\gwsynthesis\top_syn.rpt.html" completed
 GowinSynthesis finish
