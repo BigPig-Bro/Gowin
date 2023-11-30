@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="spi_top" Register="85" Lut="232" Bsram="33">
-    <SubModule name="spi_master_m0" Register="28" Alu="9" Lut="28"/>
-</Module>

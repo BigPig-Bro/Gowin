@@ -122,7 +122,7 @@ wire write_en,write_req;
 sd_card_bmp  sd_card_bmp_m0(
     .clk                        (sd_card_clk              ),
     .rst                        (~rst_n                   ),
-    .key                        (key_start                ),
+    .key                        (~key_start               ),
     .state_code                 (state_code               ),
     .bmp_width                  (16'd480                  ),  //image width
     

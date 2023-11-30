@@ -1,0 +1,11 @@
+#屏蔽 .log文件
+.log
+
+#屏蔽 .BAK 文件
+.bak
+
+#屏蔽 impl文件夹
+impl
+
+#屏蔽比赛单独的工程
+GW020AB/udp_gmii_ov5640

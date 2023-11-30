@@ -1,0 +1,15 @@
+IO_LOC "clk" H11;
+IO_LOC "led[0]" N16;
+IO_LOC "led[1]" L16;
+
+IO_LOC "mic_clk" T6;
+IO_LOC "mic_ws " P6;
+IO_LOC "mic_da " P8;
+
+IO_PORT "clk" IO_TYPE=LVCMOS33;
+IO_PORT "led[0]" IO_TYPE=LVCMOS33;
+IO_PORT "led[1]" IO_TYPE=LVCMOS33;
+IO_PORT "mic_clk" IO_TYPE=LVCMOS33;
+IO_PORT "mic_ws " IO_TYPE=LVCMOS33;
+IO_PORT "mic_da " IO_TYPE=LVCMOS33;
+
