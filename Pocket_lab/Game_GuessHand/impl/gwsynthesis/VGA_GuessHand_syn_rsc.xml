@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="top">
-    <SubModule name="m0"/>
-    <SubModule name="m1" Register="52" Alu="17" Lut="61"/>
-    <SubModule name="m2" Register="106" Alu="36" Lut="257" Bsram="25"/>
-    <SubModule name="uart_rx_inst" Register="41" Alu="3" Lut="58"/>
-    <SubModule name="m4" Register="9" Lut="19"/>
-</Module>
