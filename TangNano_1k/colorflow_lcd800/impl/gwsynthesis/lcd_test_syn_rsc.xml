@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="top">
-    <SubModule name="video_pll_m0"/>
-    <SubModule name="rgb_timing_m0" Register="48" Alu="31" Lut="30"/>
-    <SubModule name="display_m0" Register="38" Alu="10" Lut="23"/>
-</Module>
