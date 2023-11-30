@@ -7,15 +7,15 @@
 
 -mod_name TMDS_rPLL
 -file_name TMDS_rPLL
--path E:/FPGA_work/Gowin/TangNano_9k/bittest_hdmi720P/src/gowin_rpll/
+-path E:/FPGA_work/Gowin/TangNano_9k/bittest_hdmi1080P30/src/gowin_rpll/
 -type PLL
 -rPll true
 -file_type vlg
 -dev_type GW1NR-9C
 -dyn_idiv_sel false
--idiv_sel 3
+-idiv_sel 1
 -dyn_fbdiv_sel false
--fbdiv_sel 61
+-fbdiv_sel 13
 -dyn_odiv_sel false
 -odiv_sel 2
 -dyn_da_en true

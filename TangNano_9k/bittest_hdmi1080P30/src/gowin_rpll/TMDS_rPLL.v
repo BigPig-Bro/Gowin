@@ -5,7 +5,7 @@
 //Part Number: GW1NR-LV9QN88PC6/I5
 //Device: GW1NR-9
 //Device Version: C
-//Created Time: Wed Nov 01 20:31:48 2023
+//Created Time: Wed Nov 01 19:46:29 2023
 
 module TMDS_rPLL (clkout, lock, clkin);
 
@@ -40,9 +40,9 @@ rPLL rpll_inst (
 
 defparam rpll_inst.FCLKIN = "27";
 defparam rpll_inst.DYN_IDIV_SEL = "false";
-defparam rpll_inst.IDIV_SEL = 2;
+defparam rpll_inst.IDIV_SEL = 0;
 defparam rpll_inst.DYN_FBDIV_SEL = "false";
-defparam rpll_inst.FBDIV_SEL = 60;
+defparam rpll_inst.FBDIV_SEL = 12;
 defparam rpll_inst.DYN_ODIV_SEL = "false";
 defparam rpll_inst.ODIV_SEL = 2;
 defparam rpll_inst.PSDA_SEL = "0000";

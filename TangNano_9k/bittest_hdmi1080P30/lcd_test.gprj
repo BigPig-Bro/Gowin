@@ -1,0 +1,14 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
+    <FileList>
+        <File path="src/dvi_tx/DVI_TX_Top.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/TMDS_rPLL.v" type="file.verilog" enable="1"/>
+        <File path="src/rgb_timing.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

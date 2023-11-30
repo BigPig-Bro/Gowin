@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Lut="38">
-    <SubModule name="rgb_timing_m0" Register="35" Alu="31" Lut="29"/>
-    <SubModule name="u_tmds_rpll"/>
-    <SubModule name="DVI_TX_Top_inst" Register="73" Alu="68" Lut="217"/>
-</Module>
