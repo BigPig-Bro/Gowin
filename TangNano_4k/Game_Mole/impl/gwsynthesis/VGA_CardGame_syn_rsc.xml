@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="top">
-    <SubModule name="m1" Register="52" Alu="17" Lut="60"/>
-    <SubModule name="m2" Register="117" Alu="13" Lut="386" Bsram="3"/>
-    <SubModule name="uart_rx_inst" Register="55" Lut="88"/>
-    <SubModule name="m4" Register="108" Alu="42" Lut="142"/>
-    <SubModule name="u_tmds_rpll"/>
-    <SubModule name="DVI_TX_Top_inst" Register="66" Alu="68" Lut="217"/>
-</Module>
