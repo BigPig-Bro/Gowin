@@ -10,11 +10,12 @@
 
 **主要目录**：
 
-+ Pocket_lab: 基于高云GW1N-9的一款FPGA开发板，易思达和高云大学计划出品
++ Pocket_lab_F0: 基于高云GW1N-LV9的一款FPGA开发板，易思达和高云大学计划出品
++ Pocket_lab_F2: 基于高云GW2A-LV18的一款FPGA开发板，易思达和高云大学计划出品
 + Tang Mega 138K：基于 GW5AST-LV138 的一款FPGA开发板，Sipeed出品，曾用于 2023 年全国大学生 FPGA 大赛高云赛区
 + [Tang Primer 20K](https://wiki.sipeed.com/primer20k)：基于 GW2A-LV18 的一款FPGA开发板，Sipeed出品，曾用于 2022-2023 年全国大学生 FPGA 大赛高云赛区
 + [Tang Nano 20K](https://wiki.sipeed.com/hardware/zh/tang/tang-nano-20k/nano-20k.html): 基于GW2A-LV18的一款FPGA开发板，Sipeed出品
-+ [Tang Nano 9K](https://wiki.sipeed.com/tang9k)：基于 GW1NR-9 的一款 FPGA 开发板，Sipeed出品
++ [Tang Nano 9K](https://wiki.sipeed.com/tang9k)：基于 GW1NR-LV9 的一款 FPGA 开发板，Sipeed出品
 + [Tang Nano 4K](https://wiki.sipeed.com/tang4k)：基于 GW1NSR-LV4C 的一款 FPGA 开发板，Sipeed出品
 + [Tang Nano 1K](https://wiki.sipeed.com/tang1k)：基于 GW1NZ-LV1 的一款 FPGA 开发板，Sipeed 出品
 
