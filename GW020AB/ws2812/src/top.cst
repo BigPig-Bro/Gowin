@@ -1,5 +1,5 @@
 IO_LOC "clk" H11;
-IO_LOC "WS2812_Di" T7;
+IO_LOC "WS2812_Di" P6;
 
 
 IO_PORT "clk" IO_TYPE=LVCMOS33;

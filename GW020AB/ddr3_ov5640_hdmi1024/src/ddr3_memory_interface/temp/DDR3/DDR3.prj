@@ -4,14 +4,13 @@
     <Version>beta</Version>
     <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
     <FileList>
-        <File path="D:/Gowin/Gowin_V1.9.8.07_Education/IDE/ipcore/DDR3/data/ddr3_1_4/ddr3_1_4code.v" type="verilog"/>
-        <File path="D:/Gowin/Gowin_V1.9.8.07_Education/IDE/ipcore/DDR3/data/ddr3_1_4/DDR3_TOP.v" type="verilog"/>
+        <File path="D:/Gowin/Gowin_V1.9.9Beta-5/IDE/ipcore/DDR3_Deprecated/data/ddr3_1_4/ddr3_1_4code.v" type="verilog"/>
+        <File path="D:/Gowin/Gowin_V1.9.9Beta-5/IDE/ipcore/DDR3_Deprecated/data/ddr3_1_4/DDR3_TOP.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="1"/>
-        <Option type="dsp_balance" value="1"/>
-        <Option type="include_path" value="D:/Gowin/Gowin_V1.9.8.07_Education/IDE/ipcore/DDR3/data/ddr3_1_4"/>
-        <Option type="include_path" value="D:/Users/HUIP/Desktop/OV5640_LCD800_DDR3/src/ddr3_memory_interface/temp/DDR3"/>
+        <Option type="include_path" value="D:/Gowin/Gowin_V1.9.9Beta-5/IDE/ipcore/DDR3_Deprecated/data/ddr3_1_4"/>
+        <Option type="include_path" value="E:/FPGA_work/Gowin/GW020AB/ddr3_ov5640_hdmi1024/src/ddr3_memory_interface/temp/DDR3"/>
         <Option type="output_file" value="DDR3MI.vg"/>
         <Option type="output_template" value="DDR3MI_tmp.v"/>
         <Option type="ram_balance" value="1"/>
