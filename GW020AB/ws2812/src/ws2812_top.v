@@ -1,15 +1,15 @@
-//功能描述：驱动 WS2812显示不同键值颜色
+//功能描述：驱动 WS2812显示不同键值颜色（按下按键切换
 module ws2812_top (
 	input 		clk,  //输入 时钟源 
 
-	input [1:0] key, 
+	input       key, 
 
 	output reg WS2812_Di //输出到WS2812的接口
 	
 );
 parameter WS2812_NUM 	= 1  - 1     ; // WS2812的LED数量(1从0开始)
 parameter WS2812_WIDTH 	= 24 	     ; // WS2812的数据位宽
-parameter CLK_FRE 	 	= 27_000_000	 	 ; // CLK的频率(mHZ)
+parameter CLK_FRE 	 	= 27_000_000	 	 ; // CLK的频率(HZ)
 
 parameter DELAY_1_HIGH 	= (CLK_FRE / 1_000_000 * 0.85 )  - 1; //≈850ns±150ns     1 高电平时间
 parameter DELAY_1_LOW 	= (CLK_FRE / 1_000_000 * 0.40 )  - 1; //≈400ns±150ns 	  1 低电平时间
@@ -37,7 +37,7 @@ always@(posedge clk)
 				clk_delay <= clk_delay + 1;
 			else begin
 				clk_delay <= 0;
-				WS2812_data <= (key == 2'b01)? 24'h0f0000 : (key == 2'b10)? 24'h000f00 : 24'h000000;
+				WS2812_data <= (key == 0)? 24'h000f00 : 24'h0f0000;
 				state <= DATA_SEND;
 			end
 		end
