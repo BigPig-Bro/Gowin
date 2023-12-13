@@ -1,0 +1,257 @@
+E:/FPGA_work/Gowin/TangMega_138k_pro/udp_rgmii_send/src/crc.v {1 {vlog -work work -sv -stats=none E:/FPGA_work/Gowin/TangMega_138k_pro/udp_rgmii_send/src/crc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module crc
+
+Top level modules:
+	crc
+
+} {} {}} E:/FPGA_work/Gowin/gowin/gw5a/prim_sim.v {1 {vlog -work work -sv -stats=none E:/FPGA_work/Gowin/gowin/gw5a/prim_sim.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling UDP mux2
+-- Compiling module MUX2
+-- Compiling module MUX2_LUT5
+-- Compiling module MUX2_LUT6
+-- Compiling module MUX2_LUT7
+-- Compiling module MUX2_LUT8
+-- Compiling module MUX2_MUX8
+-- Compiling module MUX2_MUX16
+-- Compiling module MUX2_MUX32
+-- Compiling module MUX4
+-- Compiling module MUX8
+-- Compiling module MUX16
+-- Compiling module MUX32
+-- Compiling module LUT1
+-- Compiling module LUT2
+-- Compiling module LUT3
+-- Compiling module LUT4
+-- Compiling module LUT5
+-- Compiling module LUT6
+-- Compiling module LUT7
+-- Compiling module LUT8
+-- Compiling module ALU
+-- Compiling module DFFSE
+-- Compiling module DFFRE
+-- Compiling module DFFPE
+-- Compiling module DFFCE
+-- Compiling module DLCE
+-- Compiling module DLPE
+-- Compiling module RAM16S1
+-- Compiling module RAM16S2
+-- Compiling module RAM16S4
+-- Compiling module RAM16SDP1
+-- Compiling module RAM16SDP2
+-- Compiling module RAM16SDP4
+-- Compiling module ROM16
+-- Compiling module INV
+-- Compiling module GND
+-- Compiling module VCC
+-- Compiling module GSR
+-- Compiling module IBUF
+-- Compiling module OBUF
+-- Compiling module TBUF
+-- Compiling module IOBUF
+-- Compiling module TLVDS_IBUF
+-- Compiling module TLVDS_OBUF
+-- Compiling module TLVDS_TBUF
+-- Compiling module TLVDS_IOBUF
+-- Compiling module ELVDS_OBUF
+-- Compiling module ELVDS_TBUF
+-- Compiling module ELVDS_IOBUF
+-- Compiling module MIPI_IBUF
+-- Compiling module MIPI_OBUF_A
+-- Compiling module IBUF_R
+-- Compiling module IOBUF_R
+-- Compiling module ELVDS_IOBUF_R
+-- Compiling module I3C_IOBUF
+-- Compiling module TLVDS_IBUF_ADC
+-- Compiling module SP
+-- Compiling module SPX9
+-- Compiling module SDPB
+-- Compiling module SDPX9B
+-- Compiling module DPB
+-- Compiling module DPX9B
+-- Compiling module pROM
+-- Compiling module pROMX9
+-- Compiling module SDP36KE
+-- Compiling module MULTADDALU12X12
+-- Compiling module MULTALU27X18
+-- Compiling module MULT12X12
+-- Compiling module MULT27X36
+-- Compiling module IDDR
+-- Compiling module IDDRC
+-- Compiling module IDDR_MEM
+-- Compiling module ODDR
+-- Compiling module ODDRC
+-- Compiling module ODDR_MEM
+-- Compiling module IDES4
+-- Compiling module IDES8
+-- Compiling module IDES10
+-- Compiling module IDES16
+-- Compiling module IDES4_MEM
+-- Compiling module IVIDEO
+-- Compiling module IDES8_MEM
+-- Compiling module IDES14
+-- Compiling module IDES32
+-- Compiling module OSER4
+-- Compiling module OSER4_MEM
+-- Compiling module OVIDEO
+-- Compiling module OSER8
+-- Compiling module OSER8_MEM
+-- Compiling module OSER10
+-- Compiling module OSER16
+-- Compiling module IODELAY
+-- Compiling module OSIDES32
+-- Compiling module DCE
+-- Compiling module DCS
+-- Compiling module DDRDLL
+-- Compiling module DLLDLY
+-- Compiling module CLKDIV
+-- Compiling module CLKDIV2
+-- Compiling module DHCE
+-- Compiling module OSC
+-- Compiling module OSCA
+-- Compiling module PLL
+-- Compiling module PLLA
+-- Compiling module AE350_SOC
+-- Compiling module AE350_RAM
+-- Compiling module SAMB
+-- Compiling module OTP
+-- Compiling module CMSER
+-- Compiling module CMSERA
+-- Compiling module ADCLRC
+-- Compiling module ADCULC
+-- Compiling module ADC
+-- Compiling module MIPI_DPHY_RX
+-- Compiling module MIPI_DPHY
+-- Compiling module GTR12_QUAD
+-- Compiling module GTR12_UPAR
+-- Compiling module GTR12_PMAC
+-- Compiling module DQS
+
+Top level modules:
+	MUX2_LUT5
+	MUX2_LUT6
+	MUX2_LUT7
+	MUX2_LUT8
+	MUX2_MUX8
+	MUX2_MUX16
+	MUX2_MUX32
+	LUT1
+	LUT2
+	LUT3
+	LUT4
+	LUT8
+	ALU
+	DFFSE
+	DFFRE
+	DFFPE
+	DFFCE
+	DLCE
+	DLPE
+	RAM16S1
+	RAM16S2
+	RAM16S4
+	RAM16SDP1
+	RAM16SDP2
+	RAM16SDP4
+	ROM16
+	INV
+	GND
+	VCC
+	GSR
+	IBUF
+	OBUF
+	TBUF
+	IOBUF
+	TLVDS_IBUF
+	TLVDS_OBUF
+	TLVDS_TBUF
+	TLVDS_IOBUF
+	ELVDS_OBUF
+	ELVDS_TBUF
+	ELVDS_IOBUF
+	MIPI_IBUF
+	MIPI_OBUF_A
+	IBUF_R
+	IOBUF_R
+	ELVDS_IOBUF_R
+	I3C_IOBUF
+	TLVDS_IBUF_ADC
+	SP
+	SPX9
+	SDPB
+	SDPX9B
+	DPB
+	DPX9B
+	pROM
+	pROMX9
+	SDP36KE
+	MULTADDALU12X12
+	MULTALU27X18
+	MULT12X12
+	MULT27X36
+	IDDR
+	IDDRC
+	IDDR_MEM
+	ODDR
+	ODDRC
+	ODDR_MEM
+	IDES4
+	IDES8
+	IDES10
+	IDES16
+	IDES4_MEM
+	IVIDEO
+	IDES8_MEM
+	IDES14
+	IDES32
+	OSER4
+	OSER4_MEM
+	OVIDEO
+	OSER8
+	OSER8_MEM
+	OSER10
+	OSER16
+	OSIDES32
+	DCE
+	DCS
+	DDRDLL
+	DLLDLY
+	CLKDIV
+	CLKDIV2
+	DHCE
+	OSC
+	OSCA
+	PLL
+	PLLA
+	AE350_SOC
+	AE350_RAM
+	SAMB
+	OTP
+	CMSER
+	CMSERA
+	ADCLRC
+	ADCULC
+	ADC
+	MIPI_DPHY_RX
+	MIPI_DPHY
+	GTR12_QUAD
+	GTR12_UPAR
+	GTR12_PMAC
+	DQS
+
+} {} {}} E:/FPGA_work/Gowin/TangMega_138k_pro/udp_rgmii_send/src/top_tb.sv {1 {vlog -work work -sv -stats=none E:/FPGA_work/Gowin/TangMega_138k_pro/udp_rgmii_send/src/top_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top_tb
+
+Top level modules:
+	top_tb
+
+} {} {}} E:/FPGA_work/Gowin/TangMega_138k_pro/udp_rgmii_send/src/gowin_ddr/GMII2RGMII.vo {1 {vlog -work work -sv -stats=none E:/FPGA_work/Gowin/TangMega_138k_pro/udp_rgmii_send/src/gowin_ddr/GMII2RGMII.vo
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module GMII2RGMII
+
+Top level modules:
+	GMII2RGMII
+
+} {} {}}
