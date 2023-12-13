@@ -9,3 +9,6 @@ impl
 
 #屏蔽比赛单独的工程
 GW020AB/udp_gmii_ov5640
+
+#屏蔽lic
+*.lic
