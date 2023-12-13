@@ -12,3 +12,6 @@ GW020AB/udp_gmii_ov5640
 
 #屏蔽lic
 *.lic
+
+# 屏蔽sipeed例程
+sipeed_code
