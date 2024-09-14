@@ -1,0 +1,103 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Lite</Mode>
+    <AoCore_Lite index="0" sample_clock="i_clk" trig_type="0" capture_amount="1024" implemention="0" input_register_enabled="0" capture_init_data_enabled="0" module_name="top">
+        <SignalList>
+            <Bus capture_enable="true" name="i_key[3:0]">
+                <Signal>i_key[3]</Signal>
+                <Signal>i_key[2]</Signal>
+                <Signal>i_key[1]</Signal>
+                <Signal>i_key[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="o_led[3:0]">
+                <Signal>o_led[3]</Signal>
+                <Signal>o_led[2]</Signal>
+                <Signal>o_led[1]</Signal>
+                <Signal>o_led[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="exter_io1[33:0]">
+                <Signal>exter_io1[33]</Signal>
+                <Signal>exter_io1[32]</Signal>
+                <Signal>exter_io1[31]</Signal>
+                <Signal>exter_io1[30]</Signal>
+                <Signal>exter_io1[29]</Signal>
+                <Signal>exter_io1[28]</Signal>
+                <Signal>exter_io1[27]</Signal>
+                <Signal>exter_io1[26]</Signal>
+                <Signal>exter_io1[25]</Signal>
+                <Signal>exter_io1[24]</Signal>
+                <Signal>exter_io1[23]</Signal>
+                <Signal>exter_io1[22]</Signal>
+                <Signal>exter_io1[21]</Signal>
+                <Signal>exter_io1[20]</Signal>
+                <Signal>exter_io1[19]</Signal>
+                <Signal>exter_io1[18]</Signal>
+                <Signal>exter_io1[17]</Signal>
+                <Signal>exter_io1[16]</Signal>
+                <Signal>exter_io1[15]</Signal>
+                <Signal>exter_io1[14]</Signal>
+                <Signal>exter_io1[13]</Signal>
+                <Signal>exter_io1[12]</Signal>
+                <Signal>exter_io1[11]</Signal>
+                <Signal>exter_io1[10]</Signal>
+                <Signal>exter_io1[9]</Signal>
+                <Signal>exter_io1[8]</Signal>
+                <Signal>exter_io1[7]</Signal>
+                <Signal>exter_io1[6]</Signal>
+                <Signal>exter_io1[5]</Signal>
+                <Signal>exter_io1[4]</Signal>
+                <Signal>exter_io1[3]</Signal>
+                <Signal>exter_io1[2]</Signal>
+                <Signal>exter_io1[1]</Signal>
+                <Signal>exter_io1[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="exter_io2[15:0]">
+                <Signal>exter_io2[15]</Signal>
+                <Signal>exter_io2[14]</Signal>
+                <Signal>exter_io2[13]</Signal>
+                <Signal>exter_io2[12]</Signal>
+                <Signal>exter_io2[11]</Signal>
+                <Signal>exter_io2[10]</Signal>
+                <Signal>exter_io2[9]</Signal>
+                <Signal>exter_io2[8]</Signal>
+                <Signal>exter_io2[7]</Signal>
+                <Signal>exter_io2[6]</Signal>
+                <Signal>exter_io2[5]</Signal>
+                <Signal>exter_io2[4]</Signal>
+                <Signal>exter_io2[3]</Signal>
+                <Signal>exter_io2[2]</Signal>
+                <Signal>exter_io2[1]</Signal>
+                <Signal>exter_io2[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="cnt[24:0]">
+                <Signal>cnt[24]</Signal>
+                <Signal>cnt[23]</Signal>
+                <Signal>cnt[22]</Signal>
+                <Signal>cnt[21]</Signal>
+                <Signal>cnt[20]</Signal>
+                <Signal>cnt[19]</Signal>
+                <Signal>cnt[18]</Signal>
+                <Signal>cnt[17]</Signal>
+                <Signal>cnt[16]</Signal>
+                <Signal>cnt[15]</Signal>
+                <Signal>cnt[14]</Signal>
+                <Signal>cnt[13]</Signal>
+                <Signal>cnt[12]</Signal>
+                <Signal>cnt[11]</Signal>
+                <Signal>cnt[10]</Signal>
+                <Signal>cnt[9]</Signal>
+                <Signal>cnt[8]</Signal>
+                <Signal>cnt[7]</Signal>
+                <Signal>cnt[6]</Signal>
+                <Signal>cnt[5]</Signal>
+                <Signal>cnt[4]</Signal>
+                <Signal>cnt[3]</Signal>
+                <Signal>cnt[2]</Signal>
+                <Signal>cnt[1]</Signal>
+                <Signal>cnt[0]</Signal>
+            </Bus>
+        </SignalList>
+    </AoCore_Lite>
+    <GAO_ID>0100100100000101</GAO_ID>
+</GAO_CONFIG>
