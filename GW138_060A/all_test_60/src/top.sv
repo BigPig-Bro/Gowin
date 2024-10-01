@@ -9,8 +9,8 @@ module top(
 
     //TF卡槽（SDIO，这里仅测试SPI模式）
 	output              sd_ncs,    //chip select (SPI mode) SDIO D3
-    output              sd_dclk,   //clock                  SDIO CLK
     output              sd_mosi,   //controller data output SDIO CMD
+    output              sd_dclk,   //clock                  SDIO CLK
     input               sd_miso,   //controller data input  SDIO D0
 
     output              o_hdmi_clk_p,
@@ -41,10 +41,10 @@ assign clk_A = cnt[24];
 /////////////////////////////////////////////////////////////////////////////////////////
 //现象：按键按下，对应的LED灭，否则 23闪烁 01如果TF卡初始化成功，闪烁，未成功常亮
 
-assign   o_led[0] = i_key[0] ? 1'd1 : sd_init_done? cnt[24] : cnt[23];
-assign   o_led[1] = i_key[1] ? 1'd1 : sd_init_done? cnt[24] : cnt[23];
-assign   o_led[2] = i_key[2] ? 1'd1 :                      	  cnt[24];
-assign   o_led[3] = i_key[3] ? 1'd1 :                      	  cnt[24];
+assign   o_led[0] = ~i_key[0] ? 1'd1 : sd_init_done? cnt[24] : cnt[23];
+assign   o_led[1] = ~i_key[1] ? 1'd1 : sd_init_done? cnt[24] : cnt[23];
+assign   o_led[2] = ~i_key[2] ? 1'd1 :                      	  cnt[24];
+assign   o_led[3] = ~i_key[3] ? 1'd1 :                      	  cnt[24];
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ assign   o_led[3] = i_key[3] ? 1'd1 :                      	  cnt[24];
 logic sd_init_done;
 sd_card_top  sd_card_top_m0(
 	.clk                       (i_clk                      ),
-	.rst                       (1'b0 	                   ),
+	.rst                       (~i_key[0]                  ),
 
 	.SD_nCS                    (sd_ncs                     ),
 	.SD_DCLK                   (sd_dclk                    ),
