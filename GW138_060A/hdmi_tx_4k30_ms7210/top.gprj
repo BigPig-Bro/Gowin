@@ -1,0 +1,18 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AST-138B" pn="GW5AST-LV138PG484AC1/I0">gw5ast138b-011</Device>
+    <FileList>
+        <File path="src/gowin_pll/sys_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/hdmi_colorbar_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/i2c_dri.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_ms7210_cfg.v" type="file.verilog" enable="1"/>
+        <File path="src/key_sync.sv" type="file.verilog" enable="1"/>
+        <File path="src/ms72xx_ctl.v" type="file.verilog" enable="1"/>
+        <File path="src/video_display.v" type="file.verilog" enable="1"/>
+        <File path="src/video_driver.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>

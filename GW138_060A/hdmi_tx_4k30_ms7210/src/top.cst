@@ -1,0 +1,77 @@
+
+IO_LOC "i_clk_50m" V22;
+IO_PORT "i_clk_50m" IO_TYPE=LVCMOS33;
+
+IO_LOC "o_led[0]" AA10;
+IO_LOC "o_led[1]" AB10;
+IO_PORT "o_led[0]" IO_TYPE=LVCMOS33;
+IO_PORT "o_led[1]" IO_TYPE=LVCMOS33;
+
+IO_LOC "i_rst_n" K13;
+IO_PORT "i_rst_n" IO_TYPE=LVCMOS33;
+
+IO_LOC "o_rst_n" G20;
+IO_LOC "o_iic_scl" H20;
+IO_LOC "io_iic_sda" B22;
+IO_LOC "o_video_clk" L18;
+IO_LOC "o_video_vs" F20;
+IO_LOC "o_video_hs" F21;
+IO_LOC "o_video_de" E22;
+IO_LOC "o_video_rgb[0]" D22;
+IO_LOC "o_video_rgb[1]" E21;
+IO_LOC "o_video_rgb[2]" D21;
+IO_LOC "o_video_rgb[3]" H19;
+IO_LOC "o_video_rgb[4]" J19;
+IO_LOC "o_video_rgb[5]" H18;
+IO_LOC "o_video_rgb[6]" H17;
+IO_LOC "o_video_rgb[7]" K19;
+IO_LOC "o_video_rgb[8]" K18;
+IO_LOC "o_video_rgb[9]" M18;
+IO_LOC "o_video_rgb[10]" N19;
+IO_LOC "o_video_rgb[11]" N18;
+IO_LOC "o_video_rgb[12]" D19;
+IO_LOC "o_video_rgb[13]" D20;
+IO_LOC "o_video_rgb[14]" C20;
+IO_LOC "o_video_rgb[15]" E19;
+IO_LOC "o_video_rgb[16]" C19;
+IO_LOC "o_video_rgb[17]" C18;
+IO_LOC "o_video_rgb[18]" E17;
+IO_LOC "o_video_rgb[19]" F16;
+IO_LOC "o_video_rgb[20]" D16;
+IO_LOC "o_video_rgb[21]" E16;
+IO_LOC "o_video_rgb[22]" D15;
+IO_LOC "o_video_rgb[23]" D14;
+
+
+IO_PORT "o_rst_n" IO_TYPE=LVCMOS33;
+IO_PORT "o_iic_scl" IO_TYPE=LVCMOS33;
+IO_PORT "io_iic_sda" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_clk" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_vs" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_hs" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_de" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[0]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[1]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[2]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[3]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[4]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[5]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[6]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[7]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[8]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[9]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[10]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[11]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[12]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[13]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[14]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[15]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[16]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[17]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[18]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[19]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[20]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[21]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[22]" IO_TYPE=LVCMOS33;
+IO_PORT "o_video_rgb[23]" IO_TYPE=LVCMOS33;
+
