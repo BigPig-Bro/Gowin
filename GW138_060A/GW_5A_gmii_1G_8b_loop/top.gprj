@@ -1,0 +1,25 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AST-138B" pn="GW5AST-LV138PG484AC1/I0">gw5ast138b-011</Device>
+    <FileList>
+        <File path="src/loop_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/test_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.sv" type="file.verilog" enable="1"/>
+        <File path="src/uart/uart_rx.sv" type="file.verilog" enable="1"/>
+        <File path="src/uart/uart_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/uart/uart_tx.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/arp.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/gmii_io.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/gmii_rx.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/gmii_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/gmii_tx.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/icmp.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/rx_mux.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/tx_mux.sv" type="file.verilog" enable="1"/>
+        <File path="src/udp/udp_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>
