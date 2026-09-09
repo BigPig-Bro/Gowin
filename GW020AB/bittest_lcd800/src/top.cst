@@ -1,0 +1,68 @@
+IO_LOC "i_clk_27m" H11;
+
+IO_LOC "i_rst_n" T6;
+IO_LOC "i_key"   C6;
+
+IO_LOC "o_lcd_clk" J11;
+IO_LOC "o_lcd_hs"  L12;
+IO_LOC "o_lcd_vs"  D11;
+IO_LOC "o_lcd_de"  F10;
+
+IO_LOC "o_lcd_data[23]" R13;
+IO_LOC "o_lcd_data[22]" T14;
+IO_LOC "o_lcd_data[21]" R12;
+IO_LOC "o_lcd_data[20]" P13;
+IO_LOC "o_lcd_data[19]" R11;
+IO_LOC "o_lcd_data[18]" T12;
+IO_LOC "o_lcd_data[17]" T7;
+IO_LOC "o_lcd_data[16]" R8;
+IO_LOC "o_lcd_data[15]" H12;
+IO_LOC "o_lcd_data[14]" G11;
+IO_LOC "o_lcd_data[13]" H13;
+IO_LOC "o_lcd_data[12]" J12;
+IO_LOC "o_lcd_data[11]" K12;
+IO_LOC "o_lcd_data[10]" K13;
+IO_LOC "o_lcd_data[9]"  L13;
+IO_LOC "o_lcd_data[8]"  K11;
+IO_LOC "o_lcd_data[7]"  C9;
+IO_LOC "o_lcd_data[6]"  A9;
+IO_LOC "o_lcd_data[5]"  D16;
+IO_LOC "o_lcd_data[4]"  E14;
+IO_LOC "o_lcd_data[3]"  F15;
+IO_LOC "o_lcd_data[2]"  C13;
+IO_LOC "o_lcd_data[1]"  A13;
+IO_LOC "o_lcd_data[0]"  E16;
+
+IO_PORT "i_clk_27m" IO_TYPE=LVCMOS33;
+IO_PORT "i_rst_n"   IO_TYPE=LVCMOS33;
+IO_PORT "i_key"     IO_TYPE=LVCMOS33;
+
+IO_PORT "o_lcd_clk" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_hs"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_vs"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_de"  IO_TYPE=LVCMOS33;
+
+IO_PORT "o_lcd_data[23]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[22]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[21]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[20]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[19]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[18]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[17]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[16]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[15]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[14]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[13]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[12]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[11]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[10]" IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[9]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[8]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[7]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[6]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[5]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[4]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[3]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[2]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[1]"  IO_TYPE=LVCMOS33;
+IO_PORT "o_lcd_data[0]"  IO_TYPE=LVCMOS33;
