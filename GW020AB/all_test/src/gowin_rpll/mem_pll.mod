@@ -1,13 +1,12 @@
 -series GW2A
--device GW2A-18
--device_version C
+-device GW2A-18C
 -package PBGA256
 -part_number GW2A-LV18PG256C8/I7
 
 
 -mod_name mem_pll
 -file_name mem_pll
--path E:/FPGA_work/Gowin/GW020A/all_test/src/gowin_rpll/
+-path D:/Users/HUIP/Desktop/OV5640_HDMI800_DDR3/src/gowin_rpll/
 -type PLL
 -rPll true
 -file_type vlg

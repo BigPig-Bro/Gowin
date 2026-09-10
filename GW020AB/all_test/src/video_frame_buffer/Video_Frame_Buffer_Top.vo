@@ -1,8 +1,8 @@
-//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//Copyright (C)2014-2022 Gowin Semiconductor Corporation.
 //All rights reserved.
 //File Title: Post-PnR Simulation Model file
-//GOWIN Version: V1.9.8.11
-//Created Time: Sat Sep 09 22:27:38 2023
+//GOWIN Version: V1.9.8.07 Education
+//Created Time: Sat Sep 24 16:37:16 2022
 
 `timescale 100 ps/100 ps
 module Video_Frame_Buffer_Top(
@@ -306,7 +306,7 @@ wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/n708_1_SUM ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/n708_3 ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq1_wptr_0_23 ;
-wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_17 ;
+wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_16 ;
 wire [8:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_f ;
 wire [8:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rgraynext ;
 wire [8:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.wcount_r ;
@@ -324,7 +324,8 @@ wire [1:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_writ
 wire [1:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_w ;
 wire [9:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq2_wptr ;
 wire [9:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/rcnt_sub ;
-wire [3:2] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO ;
+wire [31:5] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO ;
+wire [3:2] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO_0 ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/video_vs_n_rising ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/n31_3 ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/n102_3 ;
@@ -617,7 +618,8 @@ wire [1:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_
 wire [127:16] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 ;
 wire [9:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.rq2_wptr ;
 wire [9:0] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/wcnt_sub ;
-wire [3:2] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/DO ;
+wire [35:20] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/DO ;
+wire [3:2] \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/DO_0 ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_frame_ctrl/n288_3 ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_frame_ctrl/n294_3 ;
 wire \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_frame_ctrl/n184_11 ;
@@ -3664,66 +3666,66 @@ DFFNP \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_ins
 	.Q(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r [1])
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s1 .INIT=1'b1;
-SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s  (
+SDPX9B \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s  (
 	.CLKA(I_vin0_clk),
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/n56_4 ),
 	.RESETA(GND),
 	.CLKB(I_dma_clk),
-	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_17 ),
+	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_16 ),
 	.RESETB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r [1]),
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [7:0]}),
+	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [8:0]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.wbin [10:0], GND, GND, GND}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_f [8:0], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/dma0_wr_data [103:96], \vfb_ddr3_wrapper_inst/dma0_wr_data [71:64], \vfb_ddr3_wrapper_inst/dma0_wr_data [39:32], \vfb_ddr3_wrapper_inst/dma0_wr_data [7:0]})
+	.DO({\vfb_ddr3_wrapper_inst/dma0_wr_data [104:96], \vfb_ddr3_wrapper_inst/dma0_wr_data [72:64], \vfb_ddr3_wrapper_inst/dma0_wr_data [40:32], \vfb_ddr3_wrapper_inst/dma0_wr_data [8:0]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .READ_MODE=1'b0;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .BIT_WIDTH_0=8;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .BIT_WIDTH_1=32;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .BIT_WIDTH_0=9;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .BIT_WIDTH_1=36;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .RESET_MODE="ASYNC";
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .BLK_SEL_0=3'b000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s .BLK_SEL_1=3'b000;
-SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s  (
+SDPX9B \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s  (
 	.CLKA(I_vin0_clk),
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/n56_4 ),
 	.RESETA(GND),
 	.CLKB(I_dma_clk),
-	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_17 ),
+	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_16 ),
 	.RESETB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r [1]),
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [15:8]}),
+	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [17:9]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.wbin [10:0], GND, GND, GND}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_f [8:0], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/dma0_wr_data [111:104], \vfb_ddr3_wrapper_inst/dma0_wr_data [79:72], \vfb_ddr3_wrapper_inst/dma0_wr_data [47:40], \vfb_ddr3_wrapper_inst/dma0_wr_data [15:8]})
+	.DO({\vfb_ddr3_wrapper_inst/dma0_wr_data [113:105], \vfb_ddr3_wrapper_inst/dma0_wr_data [81:73], \vfb_ddr3_wrapper_inst/dma0_wr_data [49:41], \vfb_ddr3_wrapper_inst/dma0_wr_data [17:9]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .READ_MODE=1'b0;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .BIT_WIDTH_0=8;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .BIT_WIDTH_1=32;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .BIT_WIDTH_0=9;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .BIT_WIDTH_1=36;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .RESET_MODE="ASYNC";
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .BLK_SEL_0=3'b000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s .BLK_SEL_1=3'b000;
-SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s  (
+SDPX9B \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s  (
 	.CLKA(I_vin0_clk),
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/n56_4 ),
 	.RESETA(GND),
 	.CLKB(I_dma_clk),
-	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_17 ),
+	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_16 ),
 	.RESETB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r [1]),
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [23:16]}),
+	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [26:18]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.wbin [10:0], GND, GND, GND}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_f [8:0], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/dma0_wr_data [119:112], \vfb_ddr3_wrapper_inst/dma0_wr_data [87:80], \vfb_ddr3_wrapper_inst/dma0_wr_data [55:48], \vfb_ddr3_wrapper_inst/dma0_wr_data [23:16]})
+	.DO({\vfb_ddr3_wrapper_inst/dma0_wr_data [122:114], \vfb_ddr3_wrapper_inst/dma0_wr_data [90:82], \vfb_ddr3_wrapper_inst/dma0_wr_data [58:50], \vfb_ddr3_wrapper_inst/dma0_wr_data [26:18]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .READ_MODE=1'b0;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .BIT_WIDTH_0=8;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .BIT_WIDTH_1=32;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .BIT_WIDTH_0=9;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .BIT_WIDTH_1=36;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .RESET_MODE="ASYNC";
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .BLK_SEL_0=3'b000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s .BLK_SEL_1=3'b000;
@@ -3732,15 +3734,15 @@ SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/n56_4 ),
 	.RESETA(GND),
 	.CLKB(I_dma_clk),
-	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_17 ),
+	.CEB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_16 ),
 	.RESETB(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r [1]),
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [31:24]}),
+	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_wr_d_32b [31:27]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.wbin [10:0], GND, GND, GND}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_f [8:0], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/dma0_wr_data [127:120], \vfb_ddr3_wrapper_inst/dma0_wr_data [95:88], \vfb_ddr3_wrapper_inst/dma0_wr_data [63:56], \vfb_ddr3_wrapper_inst/dma0_wr_data [31:24]})
+	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO [31:29], \vfb_ddr3_wrapper_inst/dma0_wr_data [127:123], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO [23:21], \vfb_ddr3_wrapper_inst/dma0_wr_data [95:91], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO [15:13], \vfb_ddr3_wrapper_inst/dma0_wr_data [63:59], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO [7:5], \vfb_ddr3_wrapper_inst/dma0_wr_data [31:27]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_3_s .READ_MODE=1'b0;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_3_s .BIT_WIDTH_0=8;
@@ -3773,7 +3775,7 @@ RAM16S4 \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_i
 	.WRE(VCC),
 	.AD({GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq1_wptr_0_5 }),
 	.DI({GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.wptr [9:8]}),
-	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO [3:2], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq2_wptr [9:8]}));
+	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/DO_0 [3:2], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq2_wptr [9:8]}));
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq1_wptr_0_s12 .INIT_0=16'h0000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq1_wptr_0_s12 .INIT_1=16'h0000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq1_wptr_0_s12 .INIT_2=16'h0000;
@@ -3954,9 +3956,9 @@ LUT1 \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst
 	.F(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq1_wptr_0_23 )
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.rq1_wptr_0_s18 .INIT=2'h1;
-INV \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_s15  (
+INV \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_s14  (
 	.I(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_empty ),
-	.O(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_17 )
+	.O(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_16 )
 );
 LUT2 \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/video_vs_n_rising_s0  (
 	.I0(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/video_vs_n_d1 ),
@@ -7448,7 +7450,7 @@ DFFNP \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/
 	.Q(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_r [1])
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_r_1_s1 .INIT=1'b1;
-SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s  (
+SDPX9B \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s  (
 	.CLKA(I_dma_clk),
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/n64_8 ),
 	.RESETA(GND),
@@ -7458,18 +7460,18 @@ SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/S
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({\vfb_ddr3_wrapper_inst/dma0_rd_data_Z [31:0]}),
+	.DI({\vfb_ddr3_wrapper_inst/dma0_rd_data_Z [35:0]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wbin [8:0], GND, VCC, VCC, VCC, VCC}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/raddr_num_f [10:2], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [31:16], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [15:0]})
+	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [35:32], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [31:16], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [15:0]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .READ_MODE=1'b0;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .BIT_WIDTH_0=32;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .BIT_WIDTH_1=32;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .BIT_WIDTH_0=36;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .BIT_WIDTH_1=36;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .RESET_MODE="ASYNC";
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .BLK_SEL_0=3'b000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_0_s .BLK_SEL_1=3'b000;
-SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s  (
+SDPX9B \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s  (
 	.CLKA(I_dma_clk),
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/n64_8 ),
 	.RESETA(GND),
@@ -7479,18 +7481,18 @@ SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/S
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({\vfb_ddr3_wrapper_inst/dma0_rd_data_Z [63:32]}),
+	.DI({\vfb_ddr3_wrapper_inst/dma0_rd_data_Z [71:36]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wbin [8:0], GND, VCC, VCC, VCC, VCC}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/raddr_num_f [10:2], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [63:48], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [47:32]})
+	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [71:64], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [63:48], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [47:36]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .READ_MODE=1'b0;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .BIT_WIDTH_0=32;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .BIT_WIDTH_1=32;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .BIT_WIDTH_0=36;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .BIT_WIDTH_1=36;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .RESET_MODE="ASYNC";
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .BLK_SEL_0=3'b000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_1_s .BLK_SEL_1=3'b000;
-SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s  (
+SDPX9B \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s  (
 	.CLKA(I_dma_clk),
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/n64_8 ),
 	.RESETA(GND),
@@ -7500,18 +7502,18 @@ SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/S
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({\vfb_ddr3_wrapper_inst/dma0_rd_data_Z [95:64]}),
+	.DI({\vfb_ddr3_wrapper_inst/dma0_rd_data_Z [107:72]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wbin [8:0], GND, VCC, VCC, VCC, VCC}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/raddr_num_f [10:2], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [95:80], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [79:64]})
+	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [107:96], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [95:80], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [79:72]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .READ_MODE=1'b0;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .BIT_WIDTH_0=32;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .BIT_WIDTH_1=32;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .BIT_WIDTH_0=36;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .BIT_WIDTH_1=36;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .RESET_MODE="ASYNC";
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .BLK_SEL_0=3'b000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_2_s .BLK_SEL_1=3'b000;
-SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s  (
+SDPX9B \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s  (
 	.CLKA(I_dma_clk),
 	.CEA(\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/n64_8 ),
 	.RESETA(GND),
@@ -7521,14 +7523,14 @@ SDPB \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/S
 	.OCE(GND),
 	.BLKSELA({GND, GND, GND}),
 	.BLKSELB({GND, GND, GND}),
-	.DI({\vfb_ddr3_wrapper_inst/dma0_rd_data_Z [127:96]}),
+	.DI({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \vfb_ddr3_wrapper_inst/dma0_rd_data_Z [127:108]}),
 	.ADA({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wbin [8:0], GND, VCC, VCC, VCC, VCC}),
 	.ADB({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/raddr_num_f [10:2], GND, GND, GND, GND, GND}),
-	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [127:112], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [111:96]})
+	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/DO [35:20], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wdata_16 [127:112], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/Small.wdata [111:108]})
 );
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .READ_MODE=1'b0;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .BIT_WIDTH_0=32;
-defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .BIT_WIDTH_1=32;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .BIT_WIDTH_0=36;
+defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .BIT_WIDTH_1=36;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .RESET_MODE="ASYNC";
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .BLK_SEL_0=3'b000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.mem_Small.mem_0_3_s .BLK_SEL_1=3'b000;
@@ -7557,7 +7559,7 @@ RAM16S4 \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_ins
 	.WRE(VCC),
 	.AD({GND, GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.rq1_wptr_0_5 }),
 	.DI({GND, GND, \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.wptr [9:8]}),
-	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/DO [3:2], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.rq2_wptr [9:8]}));
+	.DO({\vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/DO_0 [3:2], \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.rq2_wptr [9:8]}));
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.rq1_wptr_0_s12 .INIT_0=16'h0000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.rq1_wptr_0_s12 .INIT_1=16'h0000;
 defparam \vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/Small.rq1_wptr_0_s12 .INIT_2=16'h0000;

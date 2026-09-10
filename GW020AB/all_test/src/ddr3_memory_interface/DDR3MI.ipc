@@ -3,7 +3,7 @@ ipc_version=4
 file=DDR3MI
 module=DDR3MI
 target_device=gw2a18c-011
-type=ddr3
+type=ddr3_deprecated
 version=3.0
 
 [Config]

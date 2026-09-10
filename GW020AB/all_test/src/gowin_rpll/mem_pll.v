@@ -1,11 +1,10 @@
-//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//Copyright (C)2014-2022 Gowin Semiconductor Corporation.
 //All rights reserved.
 //File Title: IP file
-//GOWIN Version: V1.9.8.11
+//GOWIN Version: V1.9.8.07 Education
 //Part Number: GW2A-LV18PG256C8/I7
-//Device: GW2A-18
-//Device Version: C
-//Created Time: Sat Sep 09 22:20:29 2023
+//Device: GW2A-18C
+//Created Time: Sat Sep 24 16:50:04 2022
 
 module mem_pll (clkout, lock, clkin);
 
