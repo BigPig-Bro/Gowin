@@ -35,6 +35,10 @@ logic        send_busy_rise;  //发送忙上升沿
 logic [ 7:0] recv_data;   //接收数据
 logic        recv_en;     //接收有效脉冲
 
+//复位链信号
+logic        rst_deb;     //按键消抖后的复位，按下为低电平
+logic        sys_rst_n;   //系统复位，低有效
+
 //回环FIFO信号
 logic [P_FIFO_NUM_W-1:0] fifo_num;      //FIFO内数据个数
 logic [ 7:0]             fifo_rd_data;  //FIFO读数据
@@ -44,11 +48,31 @@ logic                    fifo_empty;    //FIFO空
 assign fifo_empty = (fifo_num == 0);
 
 /********************************************************************************/
+/**************************    时钟复位（i_clk_27m）    *************************/
+/********************************************************************************/
+
+key_sync #(
+    .P_CLK_FRE      (P_CLK_FRE      ),
+    .P_KEY_IN_MODE  (1'b0           ),
+    .P_KEY_OUT_MODE (1'b0           )
+)key_sync_m0(
+    .i_sys_clk      (i_clk_27m      ),
+    .i_key_async    (i_rst_n        ),
+    .o_key_sync     (rst_deb        )
+);
+
+boot_rst boot_rst_m0(
+    .i_clk   (i_clk_27m  ),
+    .i_rst_n (rst_deb    ),
+    .o_rst_n (sys_rst_n  )
+);
+
+/********************************************************************************/
 /**************************        send_busy上升沿      *************************/
 /********************************************************************************/
 
 always@(posedge i_clk_27m)begin
-    if(!i_rst_n)begin
+    if(!sys_rst_n)begin
         send_busy_d <= 1'b0;
     end else begin
         send_busy_d <= send_busy;
@@ -62,7 +86,7 @@ assign send_busy_rise = send_busy && !send_busy_d;
 /********************************************************************************/
 
 always@(posedge i_clk_27m)begin
-    if(!i_rst_n)begin
+    if(!sys_rst_n)begin
         wait_cnt    <= 32'd0;
         send_cnt    <= 8'd0;
         send_data   <= 8'd0;
@@ -152,7 +176,7 @@ fifo_sync #(
     .P_READ_DELAY  (0             )
 )fifo_sync_m0(
     .i_sys_clk    (i_clk_27m   ),
-    .i_rst_n      (i_rst_n     ),
+    .i_rst_n      (sys_rst_n   ),
 
     .i_read_req   (fifo_rd_req ),
     .o_read_data  (fifo_rd_data),
@@ -172,7 +196,7 @@ uart_tx #(
     .P_UART_RATE (P_UART_RATE )
 )uart_tx_m0(
     .i_sys_clk   (i_clk_27m  ),
-    .i_rst_n     (i_rst_n    ),
+    .i_rst_n     (sys_rst_n  ),
 
     .i_send_en   (send_en    ),
     .o_send_busy (send_busy  ),
@@ -186,7 +210,7 @@ uart_rx #(
     .P_UART_RATE (P_UART_RATE )
 )uart_rx_m0(
     .i_sys_clk   (i_clk_27m  ),
-    .i_rst_n     (i_rst_n    ),
+    .i_rst_n     (sys_rst_n  ),
 
     .o_recv_en   (recv_en    ),
     .o_recv_data (recv_data  ),
