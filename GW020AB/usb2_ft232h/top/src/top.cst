@@ -1,0 +1,34 @@
+IO_LOC "i_rst_n"  T6;
+IO_LOC "io_ft_data[0]"  T7;
+IO_LOC "io_ft_data[1]"  R8;
+IO_LOC "io_ft_data[2]"  R11;
+IO_LOC "io_ft_data[3]"  T12;
+IO_LOC "io_ft_data[4]"  R12;
+IO_LOC "io_ft_data[5]"  P13;
+IO_LOC "io_ft_data[6]"  R13;
+IO_LOC "io_ft_data[7]"  T14;
+IO_LOC "i_ft_rxf_n"    L13;
+IO_LOC "i_ft_txe_n"    K11;
+IO_LOC "o_ft_rd_n"     K12;
+IO_LOC "o_ft_wr_n"     K13;
+
+IO_LOC "i_ft_clk"      J12;
+IO_LOC "o_ft_oe_n"     H12;
+IO_LOC "o_ft_siwu_n"   H13;
+
+IO_PORT "i_rst_n" IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[0]"  IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[1]"  IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[2]"  IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[3]"  IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[4]"  IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[5]"  IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[6]"  IO_TYPE=LVCMOS33;
+IO_PORT "io_ft_data[7]"  IO_TYPE=LVCMOS33;
+IO_PORT "i_ft_rxf_n"    IO_TYPE=LVCMOS33;
+IO_PORT "i_ft_txe_n"    IO_TYPE=LVCMOS33;
+IO_PORT "o_ft_rd_n"     IO_TYPE=LVCMOS33;
+IO_PORT "o_ft_wr_n"     IO_TYPE=LVCMOS33;
+IO_PORT "i_ft_clk"      IO_TYPE=LVCMOS33;
+IO_PORT "o_ft_oe_n"     IO_TYPE=LVCMOS33;
+IO_PORT "o_ft_siwu_n"   IO_TYPE=LVCMOS33;
