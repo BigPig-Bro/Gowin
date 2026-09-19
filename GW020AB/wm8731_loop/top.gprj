@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+    <FileList>
+        <File path="src/audio_dac_fifo.sv" type="file.verilog" enable="1"/>
+        <File path="src/boot_rst.sv" type="file.verilog" enable="1"/>
+        <File path="src/ws2812.sv" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/audio_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/iic_disable/iic_master.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_disable/iic_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_disable/lut_wm8731.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+        <File path="src/top.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
