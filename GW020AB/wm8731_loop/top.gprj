@@ -9,9 +9,9 @@
         <File path="src/boot_rst.sv" type="file.verilog" enable="1"/>
         <File path="src/ws2812.sv" type="file.verilog" enable="1"/>
         <File path="src/gowin_rpll/audio_pll.v" type="file.verilog" enable="1"/>
-        <File path="src/iic_disable/iic_master.sv" type="file.verilog" enable="1"/>
-        <File path="src/iic_disable/iic_top.sv" type="file.verilog" enable="1"/>
-        <File path="src/iic_disable/lut_wm8731.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/iic_master.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/iic_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/lut_wm8731.sv" type="file.verilog" enable="1"/>
         <File path="src/top.sv" type="file.verilog" enable="1"/>
         <File path="src/top.cst" type="file.cst" enable="1"/>
         <File path="src/top.sdc" type="file.sdc" enable="1"/>
