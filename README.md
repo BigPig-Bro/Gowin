@@ -32,7 +32,9 @@
 
 + GW025A：基于Tang Primer 25K二次开发的一款FPGA开发板， 闲鱼搜大猪蹄子 高云 FPGA可购买
 
-+ GW138_060A：基于Tang Mega 138K / 60K 二次开发的一款FPGA开发板， 闲鱼搜大猪蹄子 高云 FPGA
++ GW138_060A：基于Tang Mega 138K / 60K 二次开发的一款FPGA开发板（IO更多）， 闲鱼搜大猪蹄子 高云 FPGA
+
++ GW138_060CD：基于Tang Mega 138K / 60K 二次开发的一款FPGA开发板（布局更好）， 闲鱼搜大猪蹄子 高云 FPGA
 
   
 
