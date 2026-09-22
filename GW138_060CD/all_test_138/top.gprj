@@ -1,0 +1,34 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AST-138B" pn="GW5AST-LV138PG484AC1/I0">gw5ast138b-011</Device>
+    <FileList>
+        <File path="src/boot_rst.sv" type="file.verilog" enable="1"/>
+        <File path="src/cmos_8_16bit.sv" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_memory_interface/DDR3MI_400M.v" type="file.verilog" enable="1"/>
+        <File path="src/ddr3_wr_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/ddr_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_async.sv" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/svo_hdmi.v" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/svo_tmds.v" type="file.verilog" enable="1"/>
+        <File path="src/hdmi_test.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/iic_master.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/iic_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/iic_init/lut_ov5640_rgb565_1024_768.sv" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_hdmi_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/rgb_clk_gen.sv" type="file.verilog" enable="1"/>
+        <File path="src/rgb_timing.sv" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/sd_card_cmd.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/sd_card_sec_read_write.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/sd_card_top.v" type="file.verilog" enable="1"/>
+        <File path="src/sd_card/spi_master.v" type="file.verilog" enable="1"/>
+        <File path="src/ws2812_driver.sv" type="file.verilog" enable="1"/>
+        <File path="src/ws2812_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.sv" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+</FileList>
+</Project>
