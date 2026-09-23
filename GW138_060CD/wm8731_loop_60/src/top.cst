@@ -1,0 +1,22 @@
+// 引脚约束：由源工程按“黑金排针 index”映射到本板模板生成
+
+IO_LOC "i_rst_n" H13;
+IO_LOC "i_clk_50m" V22;
+IO_LOC "o_wm8731_dacdat" AB21;
+IO_LOC "o_wm8731_daclrck" V20;
+IO_LOC "o_wm8731_scl" Y22;
+IO_LOC "io_wm8731_bclk" U20;
+IO_LOC "io_wm8731_adclrck" W21;
+IO_LOC "io_wm8731_sda" W22;
+IO_LOC "i_wm8731_adcdat" AB22;
+IO_LOC "o_ws2812_di" k17;
+IO_PORT "i_rst_n" IO_TYPE=LVCMOS33;
+IO_PORT "i_clk_50m" IO_TYPE=LVCMOS33;
+IO_PORT "o_wm8731_dacdat" IO_TYPE=LVCMOS33;
+IO_PORT "o_wm8731_daclrck" IO_TYPE=LVCMOS33;
+IO_PORT "o_wm8731_scl" IO_TYPE=LVCMOS33;
+IO_PORT "io_wm8731_bclk" IO_TYPE=LVCMOS33;
+IO_PORT "io_wm8731_adclrck" IO_TYPE=LVCMOS33;
+IO_PORT "io_wm8731_sda" IO_TYPE=LVCMOS33;
+IO_PORT "i_wm8731_adcdat" IO_TYPE=LVCMOS33;
+IO_PORT "o_ws2812_di" IO_TYPE=LVCMOS33;
