@@ -1,0 +1,10 @@
+// uart_loop_60 引脚约束（取自板卡模板 GW138_060CD.cst）
+
+IO_LOC "i_clk_50m" V22;
+IO_PORT "i_clk_50m" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "i_rst_n" H13;
+IO_PORT "i_rst_n" IO_TYPE=LVCMOS33;
+IO_LOC "i_uart_rx" K13;
+IO_PORT "i_uart_rx" IO_TYPE=LVCMOS33;
+IO_LOC "o_uart_tx" K14;
+IO_PORT "o_uart_tx" IO_TYPE=LVCMOS33;
