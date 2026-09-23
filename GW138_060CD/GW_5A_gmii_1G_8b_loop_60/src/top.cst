@@ -1,0 +1,66 @@
+// 引脚约束：由源工程按“黑金排针 index”映射到本板模板生成
+// 排版：IO_LOC 集中在前，IO_PORT 集中在后
+
+//时钟复位
+IO_LOC  "i_rst_n"              H13;
+
+//串口
+IO_LOC  "i_uart_rx"            K13;
+IO_LOC  "o_uart_tx"            K14;
+
+//GMII 接收
+IO_LOC  "i_gmii_rx_clk"        A13;
+IO_LOC  "i_gmii_rx_valid"      J17;
+IO_LOC  "i_gmii_rx_err"        D14;
+IO_LOC  "i_gmii_rx_data[0]"    C13;
+IO_LOC  "i_gmii_rx_data[1]"    J16;
+IO_LOC  "i_gmii_rx_data[2]"    B13;
+IO_LOC  "i_gmii_rx_data[3]"    F13;
+IO_LOC  "i_gmii_rx_data[4]"    F14;
+IO_LOC  "i_gmii_rx_data[5]"    A14;
+IO_LOC  "i_gmii_rx_data[6]"    F15;
+IO_LOC  "i_gmii_rx_data[7]"    B15;
+
+//GMII 发送
+IO_LOC  "o_gmii_tx_clk"        A15;
+IO_LOC  "o_gmii_tx_valid"      E16;
+IO_LOC  "o_gmii_tx_err"        A18;
+IO_LOC  "o_gmii_rst_n"         D16;
+IO_LOC  "o_gmii_tx_data[0]"    A16;
+IO_LOC  "o_gmii_tx_data[1]"    D17;
+IO_LOC  "o_gmii_tx_data[2]"    F16;
+IO_LOC  "o_gmii_tx_data[3]"    C17;
+IO_LOC  "o_gmii_tx_data[4]"    B17;
+IO_LOC  "o_gmii_tx_data[5]"    C18;
+IO_LOC  "o_gmii_tx_data[6]"    B18;
+IO_LOC  "o_gmii_tx_data[7]"    C19;
+
+//端口属性
+IO_PORT "i_rst_n"              IO_TYPE=LVCMOS33;
+IO_PORT "i_uart_rx"            IO_TYPE=LVCMOS33;
+IO_PORT "o_uart_tx"            IO_TYPE=LVCMOS33;
+
+IO_PORT "i_gmii_rx_clk"        IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_valid"      IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_err"        IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[0]"    IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[1]"    IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[2]"    IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[3]"    IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[4]"    IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[5]"    IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[6]"    IO_TYPE=LVCMOS33;
+IO_PORT "i_gmii_rx_data[7]"    IO_TYPE=LVCMOS33;
+
+IO_PORT "o_gmii_tx_clk"        IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_valid"      IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_err"        IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_rst_n"         IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[0]"    IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[1]"    IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[2]"    IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[3]"    IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[4]"    IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[5]"    IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[6]"    IO_TYPE=LVCMOS33;
+IO_PORT "o_gmii_tx_data[7]"    IO_TYPE=LVCMOS33;
